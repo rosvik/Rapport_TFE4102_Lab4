@@ -1,0 +1,83 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{amsmath}
+
+% comment
+
+\title{Krasj-kurs i \LaTeX}
+\author{Jon Ryfetten }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Hei, dete er et sammendrag av hele foredraget
+    \blindtext
+\end{abstract}
+
+\section{The basics}
+    \begin{enumerate}
+        \item Første
+        \item Andre
+        \item Tredje
+        \begin{itemize}
+            \item Underpunkt
+            
+        \end{itemize}
+    \end{enumerate}
+    
+\subsection{Bilder}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.2\linewidth]{icon}
+    \caption{Caption}
+    \label{fig:icon}
+\end{figure}
+
+
+\subsection{Tabell}
+
+    \begin{table}
+        \centering      % l = første kollone left, center, right
+        \begin{tabular} {| l | c | r |} \hline
+            1 & 2 & 3 \\ \hline
+            4 & 5 & 6 \\ \hline
+            7 & 8 & 9 \\ \hline
+        \end{tabular}
+    \end{table}
+
+\subsection{Matte}
+
+Kvadratroten er definert som $y = \sqrt{x}$. Dette kan vi skrive inne i teksten.
+
+\begin{equation*} \label{eq:combinatorics}
+    \frac{n!}{k!(n-k)!} = \binom{n}{k}
+\end{equation*}
+
+
+\begin{equation}
+  
+    u(x) = 
+        \begin{cases}
+            \exp{x} & \text{if } x \geq 0 \\
+            1 & \text{if } x < 0
+        \end{cases}
+    
+\end{equation}
+
+I dette prosjektet fant vi en fig som du kan se i figur \ref{fig:icon}
+
+
+% \bibliography{eferences}
+% \bibliographystyle{unsrt}
+
+
+
+
+\end{document}
