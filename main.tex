@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[norsk]{babel}
 \usepackage{makeidx}
+\usepackage{circuitikz}
 
 % Dark theme
 \usepackage{xcolor}
@@ -62,29 +63,15 @@ Sammendrag ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te
 
 \section{Innledning}
 
-% \begin{center}
-% 	Tabell 1
-% \end{center}
-% \begin{center} % l = første kollone left, center, right
-% 	\begin{tabular} {| l | c | r |} \hline
-% 			EN ABS 	& DI 	& DO \\ \hline
-% 			4 			& 5 	& $\sqrt{2} + 1$ \\ \hline
-% 			7 			& 8 	& 9 \\ \hline
-% 	\end{tabular}
-% \end{center}
-%
-% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subsection{Header}
 \newpage
 \section{'Teoridelen'}
 \subsection{Absoluttverdi}
-Uavhengig av tallsystem, så handler absoluttverdi om å omforme et tall slik at det alltid er positivt. Når det kommer til binære tall, så har man forskjellige type representasjoner. De mest vanlige er magnitude med og uten fortegn samt toerkomplement. Det er først når man kommer til toerkomplement at det blir en utfordring å ta absoluttverdi. 
+Uavhengig av tallsystem, så handler absoluttverdi om å omforme et tall slik at det alltid er positivt. Når det kommer til binære tall, så har man forskjellige type representasjoner. De mest vanlige er magnitude med og uten fortegn samt toerkomplement. Det er først når man kommer til toerkomplement at det blir en utfordring å ta absoluttverdi.
 
 For å ta absoluttverdien av et negativt tall på toerkomplement form må man invertere alle bitsene i tallet og deretter legge til en’. Man må også ta hensyn til at positive tall, disse skal ikke gjøres noe med. Man kan finne ut om et tall på toerkomplement form er negativt ved å lese den mest signifikante bitsen. Om det er null impliserer dette at tallet er positivt.
 
 \subsection{Invertering av bits}
-For å invertere bitsene kan man bruke en krets bygget opp av XOR-porter. Hver port tar inn in bit samt den mest signifikante bit. Av sannhetstabellen [..] kan vi se at XOR-porten vil invertere A når B er høy, ellers vil utgangen være lik A.  
+For å invertere bitsene kan man bruke en krets bygget opp av XOR-porter. Hver port tar inn in bit samt den mest signifikante bit. Av sannhetstabellen [..] kan vi se at XOR-porten vil invertere A når B er høy, ellers vil utgangen være lik A.
 
 \begin{table}[h]
 \centering
@@ -104,25 +91,46 @@ For å kunne legge til en’ i et binært tall kan man bruke en «Ripple Carry»
 
 Siden vi i denne sammenhengen bare er ute etter å legge til en’ (0001), kan vi simplifisere blokkene med å fjerne en inngang. Man legger til en’ ved å at «carry» i den første blokken blir en’. De nye blokkene kaller man halvadder.
 1.4 Absolutt kretsen
-Ved å koble inverteringskretsen sammen med den forenklete «Ripple Carry»-adderen oppnår man en absolutt krets.  
+Ved å koble inverteringskretsen sammen med den forenklete «Ripple Carry»-adderen oppnår man en absolutt krets.
 
 \subsection{Tidsforsinkelse}
-Fra inngangssignalet endrer seg til utgangssignalet endrer seg tar det noe tid. For å finne ut hvor lang tid dette tar kan man bruke kritisk sti. Den definerer den lengste veien et signal må forplante seg gjennom kretsen. 
-
-
-
+Fra inngangssignalet endrer seg til utgangssignalet endrer seg tar det noe tid. For å finne ut hvor lang tid dette tar kan man bruke kritisk sti. Den definerer den lengste veien et signal må forplante seg gjennom kretsen.
 
 % Skal beskrive arbeidet som er gjort, forarbeid og labriatoriearbeid som helhet for å løse oppgaven. Bekrivelsen skal være så fullstendig at undersøkelsen skal kunne gjennkonstueres.
 \section{Målemetode og arbeidsbeskrivelse}
 
 \subsection{Forarbeid}
+\subsubsection{Design av kretser}
 % TODO: Reference [x]
 For å kunne utføre labratoriearbeidet måtte vi gjøre en del forberedelser. Dette inkluderte å sette oss inn i teorien bak prosjektet, designe modeller av kretser og gjøre nødvendige utregninger. Teorien vi leste til forberedelse var hovedsaklig fra labriatorieheftet [x], og er beskrevet i kapittel 2.
 
-\subsubsection{Design av kretser}
+For å lage en Krets som tar absoluttverdien av 4 bit, trengte vi å forberede modeller av tre kretser.
 
+KRETS-1 tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable porten, EN, er aktivert, ellers gjøres det ingen endringer slik at utportene DO[1-4] er lik inputportene. Kresten består av fire XOR komponenter.
+
+\begin{center}
+	Tabell 2
+\end{center}
+\begin{center}
+	\begin{tabular} {| c | c | c | c |} \hline
+		A & B & S & C \\ \hline
+		0 & 0 & 0 & 0 \\ \hline
+		0 & 1 & 1 & 0 \\ \hline
+		1 & 0 & 0 & 1 \\ \hline
+		1 & 1 & 1 & 0 \\ \hline
+	\end{tabular}
+\end{center}
+
+
+KRETS-2 er en halvadderkrets med to innganger. Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell 1 er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
+
+KRETS-12 er en kombinasjon av KRETS-1 og KRETS-2, og repressenterer en ferdig 4-bit absoluttverdikrets.
 
 \subsection{Labratoriearbeid}
+
+
+
+
 
 
 
@@ -143,3 +151,15 @@ For å kunne utføre labratoriearbeidet måtte vi gjøre en del forberedelser. D
 
 
 \end{document}
+
+
+% \begin{center}
+% 	Tabell 1
+% \end{center}
+% \begin{center} % l = første kollone left, center, right
+% 	\begin{tabular} {| l | c | r |} \hline
+% 			EN ABS 	& DI 	& DO \\ \hline
+% 			4 			& 5 	& $\sqrt{2} + 1$ \\ \hline
+% 			7 			& 8 	& 9 \\ \hline
+% 	\end{tabular}
+% \end{center}
