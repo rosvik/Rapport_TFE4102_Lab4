@@ -51,7 +51,9 @@
 
 \newpage
 % SAMMENDRAG
-Sammendrag ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Raporten er basert på hva som ble gjort i lab 4 den 15. mars 2017. Den omhandlet oppkobling og design av en 4-bit absoluttverdi krets. Basert på XOR og AND porter i ferdig brett var oppgaven å koble dette opp slik at man kunne ta absoluttverdien av en 4-bit binært tall. 
+
+
 
 % INNHOLDSFORTEGNELSE
 \newpage
@@ -62,7 +64,9 @@ Sammendrag ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te
 \pagenumbering{arabic}
 
 \section{Innledning}
+I løpet av laboratorieøvingen er målet å lære hvordan absoluttverdikretser kan bygges opp. Man skal også kunne få en forståelse for digitalteknikk med fysiske portkretser. I slutten av laboratorieøvingen ser man også på stige-/falltid og forplatningsforsinkelse.
 
+Øvingen er delt inn i to deler, hvor den første omhandler forarbeid og den neste arbeid utført i laben. I all hovedsak handler mye av forarbeidet på å forstå og designe 4-bit absoluttverdi kretsen. Den praktiske delen er mer blanet.
 \newpage
 \section{'Teoridelen'}
 \subsection{Absoluttverdi}
@@ -95,6 +99,18 @@ Ved å koble inverteringskretsen sammen med den forenklete «Ripple Carry»-adde
 
 \subsection{Tidsforsinkelse}
 Fra inngangssignalet endrer seg til utgangssignalet endrer seg tar det noe tid. For å finne ut hvor lang tid dette tar kan man bruke kritisk sti. Den definerer den lengste veien et signal må forplante seg gjennom kretsen.
+
+\subsection{Kretskort}
+I labben fikk vi utdelt et kretskort som var ferdigloddet. Følgende informasjon ble oppgitt i laboratoriehefte;
+\begin{itemize}  
+\item To syvsegment display med driverkretser;
+\item To lysdioder med drivertransistorer
+\item Logikk i form av diskrete IC-er
+\item En spenningsregulator
+\item Koblingspinner som kan kobles sammen ved å bryke stiftlister med kortslutningsbøyler 
+
+\end{itemize}  
+Totalt består kretskortet av 32 tilkoblinger.
 
 % Skal beskrive arbeidet som er gjort, forarbeid og labriatoriearbeid som helhet for å løse oppgaven. Bekrivelsen skal være så fullstendig at undersøkelsen skal kunne gjennkonstueres.
 \section{Målemetode og arbeidsbeskrivelse}
@@ -176,8 +192,18 @@ Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. D
 
 
 \section{Utsyrsliste}
+Følgende utstyr ble brukt under labben;
+\begin{itemize}  
+\item Labkort (se 
+\item Ledninger
+\item Digitalt oscilloskop: Rohde & Schwarz, RTB2004
+\item Strømforsyning: Rohde & Schwarz, HMC8042
+\item Signalgenerator: Rohde & Schwarz, HMF2525 
+\end{itemize}
+
 
 \section{Resultater}
+
 
 \section{Diskusjon}
 
