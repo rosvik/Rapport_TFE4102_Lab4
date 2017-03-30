@@ -1,0 +1,13 @@
+\select@language {norsk}
+\contentsline {section}{\numberline {1}Innledning}{1}
+\contentsline {subsection}{\numberline {1.1}Header}{1}
+\contentsline {section}{\numberline {2}'Teoridelen'}{1}
+\contentsline {section}{\numberline {3}M\IeC {\r a}lemetode og arbeidsbeskrivelse}{1}
+\contentsline {subsection}{\numberline {3.1}Forarbeid}{1}
+\contentsline {subsection}{\numberline {3.2}Labratoriearbeid}{1}
+\contentsline {section}{\numberline {4}Utsyrsliste}{1}
+\contentsline {section}{\numberline {5}Resultater}{1}
+\contentsline {section}{\numberline {6}Diskusjon}{1}
+\contentsline {section}{\numberline {7}Konklusjon}{1}
+\contentsline {section}{\numberline {8}Vedlegg}{1}
+\contentsline {section}{\numberline {9}Litteraturreferanser}{1}

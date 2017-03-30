@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[norsk]{babel}
+\usepackage{makeidx}
 
 % Dark theme
 \usepackage{xcolor}
@@ -11,18 +12,21 @@
 \author{Johannes Tomren Røsvik og Jon Ryfetten}
 \date{\today}
 
-\begin{document}
+\makeindex
 
+\begin{document}
+\pagenumbering{gobble}
+
+% FORSIDE
 \begin{titlepage}
 	\centering
-%	\vspace{2.5cm}
-	{\LARGE TFE4102 Krets og digitalteknologi \par}
-	\vspace{1cm}
+	{\Large TFE4102 Krets og digitalteknologi \par}
+	\vfill
 	{\Large Rapport\par}
-	\vspace{1.5cm}
+	\vspace{0.5cm}
 	{\huge\bfseries Lab 4\par}
 	{\huge\bfseries Absoluttverdi 4-bit\par}
-	\vspace{2cm}
+	\vfill
 	{av\par}
 	{\Large Jon Ryfetten\par}
 	{\Large Johannes Tomren Røsvik\par}
@@ -35,18 +39,28 @@
 	{FAKULTET FOR INFORMASJONSTEKNOLOGI OG ELEKTROTEKNIKK \par}
 \end{titlepage}
 
+% TITTELSIDE
+\begin{titlepage}
+	\centering
+	{.\par}
+	\vspace{7cm}
+	{\huge\bfseries Absoluttverdi 4-bit \par}
+	\vfill
+\end{titlepage}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\newpage
+% SAMMENDRAG
+Sammendrag ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-% \begin{center}
-\begin{quote}
-	Mauris eu orci at lacus adipiscing porta at eu urna. Proin suscipit faucibus augue, eu facilisis augue euismod ac.
-\end{quote}
-\begin{center}
-	Albert Einstein
-\end{center}
+% INNHOLDSFORTEGNELSE
+\newpage
 
-\section{Introduction}
+\tableofcontents{}
+
+\newpage
+\pagenumbering{arabic}
+
+\section{Innledning}
 
 \begin{center}
 	Tabell 1
@@ -62,5 +76,34 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{Header}
+
+\section{'Teoridelen'}
+
+% Skal beskrive arbeidet som er gjort, forarbeid og labriatoriearbeid som helhet for å løse oppgaven. Bekrivelsen skal være så fullstendig at undersøkelsen skal kunne gjennkonstueres.
+\section{Målemetode og arbeidsbeskrivelse}
+
+\subsection{Forarbeid}
+% TODO: Reference [x]
+For å kunne utføre labratoriearbeidet måtte vi gjøre en del forberedelser. Dette inkluderte å sette oss inn i teorien bak prosjektet, designe modeller av kretser og gjøre nødvendige utregninger. Teorien vi leste til forberedelse var hovedsaklig fra labriatorieheftet [x], og er beskrevet i kapittel 2. 
+
+\subsection{Labratoriearbeid}
+
+
+
+
+
+\section{Utsyrsliste}
+
+\section{Resultater}
+
+\section{Diskusjon}
+
+\section{Konklusjon}
+
+\section{Vedlegg}
+
+\section{Litteraturreferanser}
+
+
 
 \end{document}
