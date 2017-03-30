@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex main.idx"] 1490869904 "main.idx" "main.ind" "main" 1490871736
-  "main.idx" 1490871735 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex main.idx"] 1490869904 "main.idx" "main.ind" "main" 1490872041
+  "main.idx" 1490872041 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "main.ilg"
   "main.ind"
-["pdflatex"] 1490871735 "main.tex" "main.pdf" "main" 1490871736
+["pdflatex"] 1490872041 "main.tex" "main.pdf" "main" 1490872041
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -14,7 +14,6 @@
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/babel-norsk/norsk.ldf" 1367878962 7454 81c33988aa9f2f7c4a604d2527fdb33c ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def" 1461448269 50112 8190990703f12b57db0dfe9b839e1e24 ""
@@ -36,15 +35,15 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1489048439 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1489048469 3873396 549fca88b91bf56daf44a4ff34280e5c ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "main.aux" 1490871735 1099 08b3a24cb32927590bfbbf04473c0b64 ""
+  "main.aux" 1490872041 1188 251a531c6defcdcbc07744821e7b337c ""
   "main.ind" 1490869904 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.tex" 1490871735 3076 9a996f57444d1e98302ee7a3f6561778 ""
-  "main.toc" 1490871735 730 47cd49194f49bdc96cabaa2e49269ea5 ""
+  "main.tex" 1490872041 3134 ce1f89ceeced6e0fd1a85fccd49f04da ""
+  "main.toc" 1490872041 801 3771ed98543799858eab5a41fa8b1bfa ""
   (generated)
+  "main.bcf"
   "main.idx"
-  "main.pdf"
+  "main.run.xml"
   "main.aux"
   "main.log"
-  "main.run.xml"
-  "main.bcf"
+  "main.pdf"
   "main.toc"
