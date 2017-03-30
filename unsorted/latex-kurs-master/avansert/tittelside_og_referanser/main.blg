@@ -1,0 +1,14 @@
+[0] Config.pm:343> INFO - This is Biber 2.5
+[0] Config.pm:346> INFO - Logfile is 'main.blg'
+[38] biber-darwin:290> INFO - === Thu Mar 30, 2017, 11:47:03
+[58] Biber.pm:351> INFO - Reading 'main.bcf'
+[141] Biber.pm:776> INFO - Found 2 citekeys in bib section 0
+[153] Biber.pm:3493> INFO - Processing section 0
+[165] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
+[167] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[168] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
+[187] UCollate.pm:66> INFO - Overriding locale 'nb-NO' defaults 'variable = shifted' with 'variable = non-ignorable'
+[187] UCollate.pm:66> INFO - Overriding locale 'nb-NO' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[187] Biber.pm:3306> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'nb-NO'
+[190] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[190] bbl.pm:619> INFO - Output to main.bbl

@@ -1,0 +1,41 @@
+\usepackage[utf8]{inputenc}
+\usepackage{FiraMono}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\pagestyle{headings}
+\usepackage{marvosym}
+\usepackage[pdftex]{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{url}
+%\usepackage{natbib}
+%\usepackage[numbers]{natbib} % Use this command if you want to refer to the literature by numbers, e.g., [1]
+\usepackage[english]{babel}
+\usepackage[threshold=1]{csquotes}
+\usepackage[style=apa,sortcites,backend=biber, natbib, hyperref=true]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+
+\usepackage{setspace}
+\usepackage{enumitem}
+\newlist{abbrv}{itemize}{1}
+\setlist[abbrv,1]{label=,labelwidth=1in,align=right,itemsep=0.1\baselineskip,leftmargin=!}
+
+\linespread{1.5}
+
+\newenvironment{remark}{\par\mbox{}\par\noindent{\bfseries \emph{Remark}\/}:\normalfont}{\par}
+\newenvironment{defin}{\par\mbox{}\par\noindent\bfseries \emph{\Pointinghand\ }\normalfont}{\par}
+\setcounter{tocdepth}{2} 
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV,
+linkcolor=black, citecolor=black, urlcolor=blue]{hyperref}
+\pdfcompresslevel=9
+
+\addbibresource{refs.bib}
+
+\usepackage[export]{adjustbox}[2011/08/13]
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage[acronym, toc]{glossaries}
+\usepackage{javascript}
+\makeglossaries

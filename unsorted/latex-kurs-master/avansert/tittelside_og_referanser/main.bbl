@@ -1,0 +1,81 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{apa/global/}
+    \entry{eu-regulation}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=36280b4324b55eea0ba102fbde2879da}{%
+           family={{Council of European Union}},
+           family_i={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{36280b4324b55eea0ba102fbde2879da}
+      \strng{fullhash}{36280b4324b55eea0ba102fbde2879da}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2016}
+      \field{labelmonth}{04}
+      \field{labelday}{27}
+      \field{datelabelsource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{month}{04}
+      \field{title}{Council regulation ({EU}) 2016/679}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679
+      \endverb
+    \endentry
+    \entry{datatilsynet}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7449f4d00623be255220f53c95420fe2}{%
+           family={{Datatilsynet}},
+           family_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7449f4d00623be255220f53c95420fe2}
+      \strng{fullhash}{7449f4d00623be255220f53c95420fe2}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2015}
+      \field{labelmonth}{03}
+      \field{labelday}{05}
+      \field{datelabelsource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{05}
+      \field{month}{03}
+      \field{title}{{Innebygd personvern}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.datatilsynet.no/Teknologi/Innebygd-personvern/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

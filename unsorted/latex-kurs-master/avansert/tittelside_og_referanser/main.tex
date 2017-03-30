@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper, norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV,
+linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+
+\usepackage[norsk]{babel}
+\usepackage[threshold=2]{csquotes}
+\usepackage[style=apa,sortcites,backend=biber, natbib, hyperref=true]{biblatex}
+\DeclareLanguageMapping{norwegian}{norwegian-apa}
+\addbibresource{references.bib}
+
+\begin{document}
+
+
+\begin{titlepage}
+	\centering
+	\vspace{2.5cm}
+	\includegraphics[width=0.15\textwidth]{figs/logo}\par\vspace{1cm}
+	{\scshape\LARGE Norges Smart i Hodet Universitet \par}
+	\vspace{1cm}
+	{\scshape\Large Mitt Teite Fag (LØK1337)\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Denne tittelen viser at jeg har gått på skole i flere år\par}
+	\vspace{2cm}
+	{\Large Andreas Drivenes\par}
+	\vfill
+	{\large \today\par}
+\end{titlepage}
+
+Hver eneste dag gir mennesker i fra seg digital informasjon som lagres
+rundt omkring i verden. Facebook-meldinger, Twitter-statuser,
+bankopplysninger, bilder og dokumenter gir et ganske komplett bilde
+av hva du som person er opptatt av. Dette er verdifulle
+data som kan brukes til markedsføring og til å skape bedre tjenester.
+Skyggesiden er at digital informasjon, som all annen informasjon, er sårbar for utnyttelse
+av aktører med onde hensikter, og sårbar på en helt annen måte enn tidligere.
+
+Løsningen «';--have i been pwned?» \footnote{https://haveibeenpwned.com/}
+har 1 994 449 415 kontoer fra 170
+kompromitterte nettsteder. Her kan brukere sjekke om de har fått kontoen
+sin med i et datainnbrudd ved å oppgi e-postadresse. Hvordan harmonerer disse
+tallene med at selskaper tar informasjonssikkerhet på alvor? Har digitale
+tjenester egentlig incentiver som virker for å passe på personvernet til brukerne?
+
+\citet{datatilsynet} skriver at
+«innebygd personvern betyr at det tas hensyn til personvernet i alle utviklingsfaser
+av et system eller en løsning. Det er både kostnadsbesparende og mer effektivt enn
+å endre et ferdig system.» Innebygget personvern
+er tatt med i den nye personvernforordningen til EU.
+Artikkel 25 sier at standarden til et system skal være at man kun prosesserer og lagrer de
+personopplysningene som skal til for å løse de oppgavene systemet har \citep{eu-regulation}.
+
+Når det svir mer for lommeboken å ha dårlig behandling av personlige data gir det økonomiske
+incentiver til å bake inn personvern i det løsningen lages, selv for nyoppstartede
+selskaper. Eksplisitt samtykke for brukeren gir selskapene en mulighet til å
+begrense hvor mye data man faktisk trenger for å drive tjenesten sin.
+
+Hva skal man så gjøre om man har lyst til å forsvinne fra nettets spindelvev av personlig
+informasjon? I likhet med Datatilsynets \url{slettmeg.no} gir personvernforordningen deg
+rett til å be om å bli fullstendig slettet fra tjenesten.
+
+
+
+\printbibliography[heading=bibintoc, title={Litteraturliste}]
+
+\end{document}
