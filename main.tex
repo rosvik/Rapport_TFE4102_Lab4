@@ -51,7 +51,7 @@
 
 \newpage
 % SAMMENDRAG
-Raporten er basert på hva som ble gjort i lab 4 den 15. mars 2017. Den omhandlet oppkobling og design av en 4-bit absoluttverdi krets. Basert på XOR og AND porter i ferdig brett var oppgaven å koble dette opp slik at man kunne ta absoluttverdien av en 4-bit binært tall. 
+Raporten er basert på hva som ble gjort i lab 4 den 15. mars 2017. Den omhandlet oppkobling og design av en 4-bit absoluttverdi krets. Basert på XOR og AND porter i ferdig brett var oppgaven å koble dette opp slik at man kunne ta absoluttverdien av en 4-bit binært tall.
 
 
 
@@ -102,14 +102,15 @@ Fra inngangssignalet endrer seg til utgangssignalet endrer seg tar det noe tid. 
 
 \subsection{Kretskort}
 I labben fikk vi utdelt et kretskort som var ferdigloddet. Følgende informasjon ble oppgitt i laboratoriehefte;
-\begin{itemize}  
+\begin{itemize}
 \item To syvsegment display med driverkretser;
 \item To lysdioder med drivertransistorer
 \item Logikk i form av diskrete IC-er
 \item En spenningsregulator
-\item Koblingspinner som kan kobles sammen ved å bryke stiftlister med kortslutningsbøyler 
+\item Koblingspinner som kan kobles sammen ved å bryke stiftlister med kortslutningsbøyler
+vis
 
-\end{itemize}  
+\end{itemize}
 Totalt består kretskortet av 32 tilkoblinger.
 
 % Skal beskrive arbeidet som er gjort, forarbeid og labriatoriearbeid som helhet for å løse oppgaven. Bekrivelsen skal være så fullstendig at undersøkelsen skal kunne gjennkonstueres.
@@ -127,7 +128,7 @@ KRETS-1 tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable port
 \begin{table}[h]
 	\centering
 	\caption{Sannhetstabell for KRETS-1}
-	\label{my-label}
+	\label{tha-label}
 	\vspace{0.2cm}
 	\begin{tabular} {| c | c | c | c |} \hline
 		A & B & S & C \\ \hline
@@ -149,7 +150,7 @@ For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits koverte
 \begin{table}[h]
 	\centering
 	\caption{Absoluttverdi}
-	\label{my-label}
+	\label{the-label}
 	\vspace{0.2cm}
 	\begin{tabular} {| l | l | l || l | l |} \hline
 		Desimal & Heksadesimal & Desimal & Binær (abs) & Heksadesimal (abs) \\ \hline
@@ -184,21 +185,17 @@ Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. D
   \item 27 og 16
 \end{itemize}
 
-
-
-
-
-
+Ved å koble av og på inputene 0 og 1 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra Tabell 2. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at lysene SUM og CARRY lyser opp i henhold til S og C i Tabell 2.
 
 
 \section{Utsyrsliste}
 Følgende utstyr ble brukt under labben;
-\begin{itemize}  
-\item Labkort (se 
-\item Ledninger
-\item Digitalt oscilloskop: Rohde & Schwarz, RTB2004
-\item Strømforsyning: Rohde & Schwarz, HMC8042
-\item Signalgenerator: Rohde & Schwarz, HMF2525 
+\begin{itemize}
+	\item Labkort (se)
+	\item Ledninger
+	\item Digitalt oscilloskop: Rohde \& Schwarz, RTB2004
+	\item Strømforsyning: Rohde \& Schwarz, HMC8042
+	\item Signalgenerator: Rohde \& Schwarz, HMF2525
 \end{itemize}
 
 
