@@ -86,6 +86,19 @@ For å ta absoluttverdien av et negativt tall på toerkomplement form må man in
 \subsection{Invertering av bits}
 For å invertere bitsene kan man bruke en krets bygget opp av XOR-porter. Hver port tar inn in bit samt den mest signifikante bit. Av sannhetstabellen [..] kan vi se at XOR-porten vil invertere A når B er høy, ellers vil utgangen være lik A.  
 
+\begin{table}[h]
+\centering
+\caption{XOR-sannhetstabell}
+\label{my-label}
+\begin{tabular}{lll}
+A & B & Q \\
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0
+\end{tabular}
+\end{table}
+
 \subsection{Ripple Carry}
 For å kunne legge til en’ i et binært tall kan man bruke en «Ripple Carry»-adderer. Adderen har som formål å kunne addere to binære tall. Denne baser seg på at man har en blokk for hver bit. Hver av blokkene legger sammen tre bit. En carry, samt et tall med lik indeks fra hver av input tallene. «Carry»-biten kommer fra sist blokk. Blokken vil deretter gi ut summen av de tre bitene og en eventuell «carry».
 
