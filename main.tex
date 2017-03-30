@@ -3,6 +3,8 @@
 \usepackage[norsk]{babel}
 \usepackage{makeidx}
 \usepackage{circuitikz}
+\usepackage{multicol}
+\usepackage[margin=3cm]{geometry}
 
 % Dark theme
 \usepackage{xcolor}
@@ -179,19 +181,41 @@ For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits koverte
 Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. Dette betyr at vi kobler sammen portene
 
 \begin{itemize}
-	\item 26 og 14
-	\item 26 og 15
-	\item 27 og 13
-	\item 27 og 16
+	\begin{multicols}{2}
+		\item 26 og 14
+		\item 26 og 15
+		\item 27 og 13
+		\item 27 og 16
+	\end{multicols}
 \end{itemize}
 
-Ved å koble av og på inputene 0 og 1 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra Tabell 2. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at lysene SUM og CARRY lyser opp i henhold til S og C i Tabell 2.
 
+Ved å koble av og på stiftlistparene 0 og 3 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra Tabell 2. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at LED-lampene SUM og CARRY lyser opp i henhold til S og C i Tabell 2.
+
+Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hele funksjonaliteten. Portene som skal kobles sammen er
+
+\begin{itemize}
+	\begin{multicols}{2}
+		\item 1, 4, 7, 10, 11, 13, 15 og 30
+		\item 29 og 8
+		\item 28 og 5
+		\item 27 og 2
+		\item 3, 14 og 16
+		\item 6 og 19
+		\item 9 og 22
+		\item 12 og 25
+		\item 17 og 18
+		\item 20 og 21
+		\item 23 og 24
+	\end{multicols}
+\end{itemize}
+
+Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell 3. Nå følger vi med på de to 7-segmentsdisplayene for å se input og output.
 
 \section{Utsyrsliste}
 Følgende utstyr ble brukt under labben;
 \begin{itemize}
-	\item Labkort (se)
+	\item Labkort (se
 	\item Ledninger
 	\item Digitalt oscilloskop: Rohde \& Schwarz, RTB2004
 	\item Strømforsyning: Rohde \& Schwarz, HMC8042
