@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  30 MAR 2017 14:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  30 MAR 2017 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -719,7 +719,14 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 
 
 Writing index file main.idx
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -807,22 +814,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] [1] [2] [3] [4] (./main.aux) ) 
+ [2] [1] [2]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3] [4] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
  18089 strings out of 493014
  421672 string characters out of 6133352
- 548895 words of memory out of 5000000
+ 556934 words of memory out of 5000000
  21361 multiletter control sequences out of 15000+600000
  5764 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,462b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy5.pfb>
-Output written on main.pdf (8 pages, 83956 bytes).
+ 62i,8n,56p,462b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+Output written on main.pdf (8 pages, 86617 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream

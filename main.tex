@@ -108,10 +108,11 @@ For å lage en Krets som tar absoluttverdien av 4 bit, trengte vi å forberede m
 
 KRETS-1 tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable porten, EN, er aktivert, ellers gjøres det ingen endringer slik at utportene DO[1-4] er lik inputportene. Kresten består av fire XOR komponenter.
 
-\begin{center}
-	Tabell 2
-\end{center}
-\begin{center}
+\begin{table}[h]
+	\centering
+	\caption{Sannhetstabell for KRETS-1}
+	\label{my-label}
+	\vspace{0.2cm}
 	\begin{tabular} {| c | c | c | c |} \hline
 		A & B & S & C \\ \hline
 		0 & 0 & 0 & 0 \\ \hline
@@ -119,12 +120,43 @@ KRETS-1 tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable port
 		1 & 0 & 0 & 1 \\ \hline
 		1 & 1 & 1 & 0 \\ \hline
 	\end{tabular}
-\end{center}
+\end{table}
 
 
-KRETS-2 er en halvadderkrets med to innganger. Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell 1 er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
+KRETS-2 er en halvadderkrets med to innganger. Dette vil si at den Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell 1 er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
 
 KRETS-12 er en kombinasjon av KRETS-1 og KRETS-2, og repressenterer en ferdig 4-bit absoluttverdikrets.
+
+\subsubsection{Utregninger}
+For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits kovertering til absoluttverdi. Vi noterer derfor ned alle verdier fra -8 til 7 og deres absoluttverdier. Vi skriver verdiene på hexadesimal og desimal form for å forenkle arbeidet på lab.
+
+\begin{table}[h]
+	\centering
+	\caption{Absoluttverdi}
+	\label{my-label}
+	\vspace{0.2cm}
+	\begin{tabular} {| l | l | l || l | l |} \hline
+		Desimal & Heksadesimal & Desimal & Binær (abs) & Heksadesimal (abs) \\ \hline
+		7 & 0111 & 0x7 & 0111 & 0x7 \\ \hline
+		6 & 0110 & 0x6 & 0110 & 0x6 \\ \hline
+		5 & 0101 & 0x5 & 0101 & 0x5 \\ \hline
+		4 & 0100 & 0x4 & 0100 & 0x4 \\ \hline
+		3 & 0011 & 0x3 & 0011 & 0x3 \\ \hline
+		2 & 0010 & 0x2 & 0010 & 0x2 \\ \hline
+		1 & 0001 & 0x1 & 0001 & 0x1 \\ \hline
+		0 & 0000 & 0x0 & 0000 & 0x0 \\ \hline
+		-1 & 1111 & 0xF & 0001 & 0x1 \\ \hline
+		-2 & 1110 & 0xE & 0010 & 0x2 \\ \hline
+		-3 & 1101 & 0xD & 0011 & 0x3 \\ \hline
+		-4 & 1100 & 0xC & 0100 & 0x4 \\ \hline
+		-5 & 1011 & 0xB & 0101 & 0x5 \\ \hline
+		-6 & 1010 & 0xA & 0110 & 0x6 \\ \hline
+		-7 & 1001 & 0x9 & 0111 & 0x7 \\ \hline
+		-8 & 1000 & 0x8 & 1000 & 0x8 \\ \hline
+	\end{tabular}
+\end{table}
+
+
 
 \subsection{Labratoriearbeid}
 
