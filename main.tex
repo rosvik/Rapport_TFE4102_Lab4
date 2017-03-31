@@ -228,6 +228,20 @@ Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p
 
 
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{tegneserie1}
+    \caption{Skjermdump av målingene med varierende frekvens}
+    \label{fig:tegneserie1}
+\end{figure}
+
+På figur \ref{fig:tegneserie1} ser man skjermdump fra oscilloskopet. Den gule linjen beskriver stige- og falltiden til kretsen sin kritiske sti. Den oransje linjen kommer rett fra signalgeneratoren gjennom en BNC-BNC kabel. 
+
+
+Vi ser at når vi økte frekvensen vil den på et punkt være så høy at ut signalet hele tiden er lavt. Dette ser man på de to siste bildene i kollasjen, figur \ref{fig:tegneserie1}. 
+
+Målingen som ble gjort var å måle stige og falltid for den kritiske stien. Først frem til AND-porten og deretter frem til XOR porten i samme halvadder. Se resultater.
+
 
 
 
@@ -245,6 +259,20 @@ Følgende utstyr ble brukt under labben;
 \end{itemize}
 
 \section{Resultater}
+\begin{table}[h]
+    \centering
+    \caption{Resultater}
+    \label{my-label}
+    \begin{tabular}{lllll}
+    \textbf{Måling}          & \textbf{Beregnet} & \textbf{Målt} & \textbf{Avik} & \textbf{Avik (\%)} \\
+    Forplantningsforsinkelse & 655ns             & 640ns         & 15ns          & 2.3\%              \\
+    Rise time                &                   & 47ns          &               &                    \\
+    Fall time                &                   & 63ns          &               &                    \\
+    Rise time, XOR port      &                   & 32ns          &               &                    \\
+    Fall time, XOR port      &                   & 82ns          &               &                   
+    \end{tabular}
+\end{table}
+
 
 
 \section{Diskusjon}
