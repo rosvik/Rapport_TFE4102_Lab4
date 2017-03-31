@@ -5,6 +5,8 @@
 \usepackage{circuitikz}
 \usepackage{multicol}
 \usepackage[margin=3cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 
 % Dark theme
 \usepackage{xcolor}
@@ -178,7 +180,7 @@ For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits koverte
 \newpage
 
 \subsection{Labratoriearbeid}
-Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. Dette betyr at vi kobler sammen portene
+Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. Vi kobler støm til port 31 og jording til 32. Så kobler sammen portene
 
 \begin{itemize}
 	\begin{multicols}{2}
@@ -192,7 +194,7 @@ Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. D
 
 Ved å koble av og på stiftlistparene 0 og 3 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra Tabell 2. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at LED-lampene SUM og CARRY lyser opp i henhold til S og C i Tabell 2.
 
-Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hele funksjonaliteten. Portene som skal kobles sammen er
+Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hele funksjonaliteten. Strøm og jording kobles som før, og de andre portene som skal kobles sammen er
 
 \begin{itemize}
 	\begin{multicols}{2}
@@ -210,13 +212,17 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 	\end{multicols}
 \end{itemize}
 
-Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell 3. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output.
+Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell 3. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output. Etter at vi har testet alle verdiene og er overbevist om at kretsen fungerer, kan vi gå videre.
+
+Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloscopet i modusen 10x.
+\includegraphics[scale=0.3]{SCR03}
 
 \section{Utsyrsliste}
 Følgende utstyr ble brukt under labben;
 \begin{itemize}
 	\item Labkort (se % TODO
-	\item Ledninger
+	\item Ca. 20 ledninger
+	\item Probe
 	\item Digitalt oscilloskop: Rohde \& Schwarz, RTB2004
 	\item Strømforsyning: Rohde \& Schwarz, HMC8042
 	\item Signalgenerator: Rohde \& Schwarz, HMF2525
