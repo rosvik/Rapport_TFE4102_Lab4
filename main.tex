@@ -6,6 +6,7 @@
 \usepackage{multicol}
 \usepackage[margin=3cm]{geometry}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \graphicspath{ {images/} }
 
 % Dark theme
@@ -135,7 +136,7 @@ KRETS-1 tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable port
 \begin{table}[h]
 	\centering
 	\caption{Sannhetstabell for KRETS-1}
-	\label{tha-label}
+	\label{tab:sannhet1}
 	\vspace{0.2cm}
 	\begin{tabular} {| c | c | c | c |} \hline
 		A & B & S & C \\ \hline
@@ -147,7 +148,7 @@ KRETS-1 tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable port
 \end{table}
 
 
-KRETS-2 er en halvadderkrets med to innganger. Dette vil si at den Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell 1 er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
+KRETS-2 er en halvadderkrets med to innganger. Dette vil si at den Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell \ref{tab:sannhet1} er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
 
 KRETS-12 er en kombinasjon av KRETS-1 og KRETS-2, og repressenterer en ferdig 4-bit absoluttverdikrets.
 
@@ -157,7 +158,7 @@ For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits koverte
 \begin{table}[h]
 	\centering
 	\caption{Absoluttverdi}
-	\label{the-label}
+	\label{tab:abs1}
 	\vspace{0.2cm}
 	\begin{tabular} {| l | l | l || l | l |} \hline
 		Desimal & Heksadesimal & Desimal & Binær (abs) & Heksadesimal (abs) \\ \hline
@@ -195,7 +196,7 @@ Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. V
 \end{itemize}
 
 
-Ved å koble av og på stiftlistparene 0 og 3 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra Tabell 2. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at LED-lampene SUM og CARRY lyser opp i henhold til S og C i Tabell 2.
+Ved å koble av og på stiftlistparene 0 og 3 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra Tabell \ref{tab:sannhet1}. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at LED-lampene SUM og CARRY lyser opp i henhold til S og C i Tabell \ref{tab:sannhet1}.
 
 Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hele funksjonaliteten. Strøm og jording kobles som før, og de andre portene som skal kobles sammen er
 
@@ -215,10 +216,19 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 	\end{multicols}
 \end{itemize}
 
-Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell 3. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output. Etter at vi har testet alle verdiene og er overbevist om at kretsen fungerer, kan vi gå videre.
+\begin{wrapfigure}{1}{0.2\textwidth}
+	\includegraphics[scale=0.2]{SCR03}
+	\caption{Innstillinger for probe på oscilloskop.}
+	\label{fig:inst1}
+\end{wrapfigure}
 
-Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloscopet i modusen 10x.
-\includegraphics[scale=0.3]{SCR03}
+Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell \ref{tab:abs1}. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output. Etter at vi har testet alle verdiene og er overbevist om at kretsen fungerer, kan vi gå videre.
+
+Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloskopet i modusen 10x som vist i Figur \ref{fig:inst1}.
+
+
+
+
 
 
 \subsubsection{Stige-/falltid}

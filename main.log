@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  31 MAR 2017 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  31 MAR 2017 11:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -788,7 +788,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen179
 \Gm@dimlist=\toks29
 )
-\GPT@outputbox=\box63
+(/usr/local/texlive/2016/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen180
+\WF@size=\dimen181
+\c@WF@wrappedlines=\count120
+\WF@box=\box63
+\WF@everypar=\toks30
+Package: wrapfig 2003/01/31  v 3.6
+)
+\GPT@outputbox=\box64
 \@indexfile=\write4
 \openout4 = `main.idx'.
 
@@ -797,32 +805,32 @@ Writing index file main.idx
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen180
-\scratchbox=\box64
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen181
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count121
+\scratchdimen=\dimen182
+\scratchbox=\box65
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen183
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -914,44 +922,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `main.toc'.
 
  [2] [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
  [2]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] <images/SCR03.png, id=34, 1284.8pt x 827.09pt>
+[3] <images/SCR03.png, id=34, 424.58624pt x 530.98375pt>
 File: images/SCR03.png Graphic file (type png)
- <use images/SCR03.png>
-Package pdftex.def Info: images/SCR03.png used on input line 218.
-(pdftex.def)             Requested size: 385.44298pt x 248.1289pt.
 
-[4] [5 <./images/SCR03.png>] (./main.aux) ) 
+<use images/SCR03.png>
+Package pdftex.def Info: images/SCR03.png used on input line 217.
+(pdftex.def)             Requested size: 84.91574pt x 106.19485pt.
+ [4] [5 <./images/SCR03.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18706 strings out of 493014
- 430905 string characters out of 6133352
- 576827 words of memory out of 5000000
- 21958 multiletter control sequences out of 15000+600000
+ 18773 strings out of 493014
+ 431765 string characters out of 6133352
+ 578045 words of memory out of 5000000
+ 22021 multiletter control sequences out of 15000+600000
  5764 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,452b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy5.pfb>
-Output written on main.pdf (9 pages, 145815 bytes).
+ 62i,8n,56p,466b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb>
+Output written on main.pdf (9 pages, 110842 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
