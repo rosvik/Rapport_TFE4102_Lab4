@@ -7,6 +7,8 @@
 \usepackage[margin=3cm]{geometry}
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{amsmath}
+
 \graphicspath{ {images/} }
 
 % Dark theme
@@ -181,6 +183,8 @@ For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits koverte
 	\end{tabular}
 \end{table}
 
+% TODO: Forarbeid 5e (forplantningsforinkelse)
+
 \newpage
 
 \subsection{Labratoriearbeid}
@@ -217,7 +221,7 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 \end{itemize}
 
 \begin{wrapfigure}{1}{0.2\textwidth}
-	\includegraphics[scale=0.2]{SCR03}
+	\includegraphics[scale=0.25]{SCR03}
 	\caption{Innstillinger for probe på oscilloskop.}
 	\label{fig:inst1}
 \end{wrapfigure}
@@ -228,18 +232,17 @@ Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabe
 Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloskopet i modusen 10x som vist i Figur \ref{fig:inst1}.
 
 \subsubsection{Forplantlingsforsinkelse}
-For å kunne se hvordan kretsen fungerer når inn- og utverdiene forander seg vil vi koble på signalgeneratoren. Vi kobler
+For å kunne se hvordan kretsen fungerer når inn- og utverdiene forander seg vil vi koble på signalgeneratoren. Vi gjorde dette ved å koble signalgeneratonen til både oscilloskopets kanal 3 og kretsen ved hjelp av et BNC T-ledd. Vi kobler proben til enden av kritisk sti slik at vi kan måle forplantninsforsinkelsen. Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.
 
+Vi leser av forplantningsforsinkelsen til å være 640 ns. Sammenlignet med utregningene i forarbeider som var på 655ns er det et akseptabelt avvik på 4\% som hovedsaklig stammer fra usikkerhet i målingene våre, men også usikkerheter i komponenter og ledninger.
 
+Med denne informasjonen kan vi regne ut den maksimale klokkefrekvensen for den målte verdien:
 
+\begin{equation}
+	f_{max} = \frac{1}{640ns} = 1,56 MHz
+\end{equation}
 
-
-\subsubsection{Stige-/falltid}
-I den siste delen av laboratorieøvingen skulle vi lese av stig og falltid for den kritiske stien. Dette gjorde vi ved å bruke en signalgenerator, oscilloskop, probe og BNC-BNC kabel.
-
-Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.  Oscilloskopet ble stilt inn til å kun vise en flanke.
-
-
+Vi vil så se hva som skjer om vi øker klokkefrekvensen over den maksimale klokkefrekvensen.
 
 \begin{figure}[h]
 	\centering
@@ -248,17 +251,16 @@ Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p
 	\label{fig:tegneserie1}
 \end{figure}
 
-På figur \ref{fig:tegneserie1} ser man skjermdump fra oscilloskopet. Den gule linjen beskriver stige- og falltiden til kretsen sin kritiske sti. Den oransje linjen kommer rett fra signalgeneratoren gjennom en BNC-BNC kabel.
+På figur \ref{fig:tegneserie1} ser man skjermdump fra oscilloskopet. Den gule linjen (CH1) beskriver stige- og falltiden til kretsen sin kritiske sti. Den oransje linjen (CH3) kommer rett fra signalgeneratoren gjennom en BNC-BNC kabel.
 
-
-Vi ser at når vi økte frekvensen vil den på et punkt være så høy at ut signalet hele tiden er lavt. Dette ser man på de to siste bildene i kollasjen, figur \ref{fig:tegneserie1}.
+Vi ser at når vi økte frekvensen vil den på et punkt være så høy at ut signalet hele tiden er lavt. Dette ser man på bilde 3 og 4 i figur \ref{fig:tegneserie1}.
 
 Målingen som ble gjort var å måle stige og falltid for den kritiske stien. Først frem til AND-porten og deretter frem til XOR porten i samme halvadder. Se resultater.
 
 
-
-
-
+\subsubsection{Stige-/falltid}
+Oscilloskopet ble stilt inn til å kun vise en flanke.
+% TODO: Laboppgave 5
 
 \section{Utsyrsliste}
 Følgende utstyr ble brukt under labben;

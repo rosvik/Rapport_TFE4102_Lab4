@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {3.2}Labratoriearbeid}{4}
 \contentsline {subsubsection}{\numberline {3.2.1}Oppsett av Oscilloskopet og justering av probe}{4}
 \contentsline {subsubsection}{\numberline {3.2.2}Forplantlingsforsinkelse}{5}
-\contentsline {subsubsection}{\numberline {3.2.3}Stige-/falltid}{5}
+\contentsline {subsubsection}{\numberline {3.2.3}Stige-/falltid}{6}
 \contentsline {section}{\numberline {4}Utsyrsliste}{6}
 \contentsline {section}{\numberline {5}Resultater}{6}
 \contentsline {section}{\numberline {6}Diskusjon}{6}
