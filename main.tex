@@ -105,6 +105,9 @@ Ved å koble inverteringskretsen sammen med den forenklete «Ripple Carry»-adde
 \subsection{Tidsforsinkelse}
 Fra inngangssignalet endrer seg til utgangssignalet endrer seg tar det noe tid. For å finne ut hvor lang tid dette tar kan man bruke kritisk sti. Den definerer den lengste veien et signal må forplante seg gjennom kretsen.
 
+\subsection{Stige-/falltid}
+Tiden det tar for en utgang å stige fra 10\% til 90\% kaller man sitgetid. Falltid er tiden utgangen bruker på å gå fra 90\% til å falle ned til 10\%
+
 \subsection{Kretskort}
 I labben fikk vi utdelt et kretskort som var ferdigloddet. Følgende informasjon ble oppgitt i laboratoriehefte;
 \begin{itemize}
@@ -217,6 +220,17 @@ Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabe
 Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloscopet i modusen 10x.
 \includegraphics[scale=0.3]{SCR03}
 
+
+\subsubsection{Stige-/falltid}
+I den siste delen av laboratorieøvingen skulle vi lese av stig og falltid for den kritiske stien. Dette gjorde vi ved å bruke en signalgenerator, oscilloskop, probe og BNC-BNC kabel. 
+
+Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.  Oscilloskopet ble stilt inn til å kun vise en flanke. 
+
+
+
+
+
+
 \section{Utsyrsliste}
 Følgende utstyr ble brukt under labben;
 \begin{itemize}
@@ -226,6 +240,8 @@ Følgende utstyr ble brukt under labben;
 	\item Digitalt oscilloskop: Rohde \& Schwarz, RTB2004
 	\item Strømforsyning: Rohde \& Schwarz, HMC8042
 	\item Signalgenerator: Rohde \& Schwarz, HMF2525
+	\item Probe: Rohde \& Schwarz, RT-ZP03
+	\item BNC-BNC kabel
 \end{itemize}
 
 \section{Resultater}
