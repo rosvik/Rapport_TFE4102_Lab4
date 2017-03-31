@@ -224,17 +224,36 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 
 Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell \ref{tab:abs1}. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output. Etter at vi har testet alle verdiene og er overbevist om at kretsen fungerer, kan vi gå videre.
 
+\subsubsection{Oppsett av Oscilloskopet og justering av probe}
 Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloskopet i modusen 10x som vist i Figur \ref{fig:inst1}.
 
+\subsubsection{Forplantlingsforsinkelse}
+For å kunne se hvordan kretsen fungerer når inn- og utverdiene forander seg vil vi koble på signalgeneratoren. Vi kobler
 
 
 
 
 
 \subsubsection{Stige-/falltid}
-I den siste delen av laboratorieøvingen skulle vi lese av stig og falltid for den kritiske stien. Dette gjorde vi ved å bruke en signalgenerator, oscilloskop, probe og BNC-BNC kabel. 
+I den siste delen av laboratorieøvingen skulle vi lese av stig og falltid for den kritiske stien. Dette gjorde vi ved å bruke en signalgenerator, oscilloskop, probe og BNC-BNC kabel.
 
-Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.  Oscilloskopet ble stilt inn til å kun vise en flanke. 
+Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.  Oscilloskopet ble stilt inn til å kun vise en flanke.
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{tegneserie1}
+	\caption{Skjermdump av målingene med varierende frekvens}
+	\label{fig:tegneserie1}
+\end{figure}
+
+På figur \ref{fig:tegneserie1} ser man skjermdump fra oscilloskopet. Den gule linjen beskriver stige- og falltiden til kretsen sin kritiske sti. Den oransje linjen kommer rett fra signalgeneratoren gjennom en BNC-BNC kabel.
+
+
+Vi ser at når vi økte frekvensen vil den på et punkt være så høy at ut signalet hele tiden er lavt. Dette ser man på de to siste bildene i kollasjen, figur \ref{fig:tegneserie1}.
+
+Målingen som ble gjort var å måle stige og falltid for den kritiske stien. Først frem til AND-porten og deretter frem til XOR porten i samme halvadder. Se resultater.
 
 
 
@@ -252,10 +271,23 @@ Følgende utstyr ble brukt under labben;
 	\item Signalgenerator: Rohde \& Schwarz, HMF2525
 	\item Probe: Rohde \& Schwarz, RT-ZP03
 	\item BNC-BNC kabel
+	\item BNC T-ledd
 \end{itemize}
 
 \section{Resultater}
-
+\begin{table}[h]
+	\centering
+	\caption{Resultater}
+	\label{my-label}
+	\begin{tabular}{lllll}
+	\textbf{Måling}          & \textbf{Beregnet} & \textbf{Målt} & \textbf{Avik} & \textbf{Avik (\%)} \\
+	Forplantningsforsinkelse & 655ns             & 640ns         & 15ns          & 2.3\%              \\
+	Rise time                &                   & 47ns          &               &                    \\
+	Fall time                &                   & 63ns          &               &                    \\
+	Rise time, XOR port      &                   & 32ns          &               &                    \\
+	Fall time, XOR port      &                   & 82ns          &               &
+	\end{tabular}
+\end{table}
 
 \section{Diskusjon}
 
