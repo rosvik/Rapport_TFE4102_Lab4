@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{amsmath}
+\usepackage{float}
 
 \graphicspath{ {images/} }
 
@@ -124,6 +125,8 @@ vis
 Totalt består kretskortet av 32 tilkoblinger.
 
 % Skal beskrive arbeidet som er gjort, forarbeid og labriatoriearbeid som helhet for å løse oppgaven. Bekrivelsen skal være så fullstendig at undersøkelsen skal kunne gjennkonstueres.
+
+\newpage
 \section{Målemetode og arbeidsbeskrivelse}
 
 \subsection{Forarbeid}
@@ -219,6 +222,8 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 		\item 23 og 24
 	\end{multicols}
 \end{itemize}
+Se ferdig oppkoblet brett i vedlegg, figur \ref{fig:IMG_2923}
+\newline
 
 \begin{wrapfigure}{1}{0.2\textwidth}
 	\includegraphics[scale=0.25]{SCR03}
@@ -226,8 +231,17 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 	\label{fig:inst1}
 \end{wrapfigure}
 
-Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell \ref{tab:abs1}. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output. Etter at vi har testet alle verdiene og er overbevist om at kretsen fungerer, kan vi gå videre.
 
+Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell \ref{tab:abs1}. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output. Etter at vi har testet alle verdiene og er overbevist om at kretsen fungerer, kan vi gå videre. 
+
+
+
+
+
+
+
+
+\newpage
 \subsubsection{Oppsett av Oscilloskopet og justering av probe}
 Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloskopet i modusen 10x som vist i Figur \ref{fig:inst1}.
 
@@ -244,16 +258,10 @@ Med denne informasjonen kan vi regne ut den maksimale klokkefrekvensen for den m
 
 Vi vil så se hva som skjer om vi øker klokkefrekvensen over den maksimale klokkefrekvensen.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\linewidth]{tegneserie1}
-	\caption{Skjermdump av målingene med varierende frekvens}
-	\label{fig:tegneserie1}
-\end{figure}
 
 På figur \ref{fig:tegneserie1} ser man skjermdump fra oscilloskopet. Den gule linjen (CH1) beskriver stige- og falltiden til kretsen sin kritiske sti. Den oransje linjen (CH3) kommer rett fra signalgeneratoren gjennom en BNC-BNC kabel.
 
-Vi ser at når vi økte frekvensen vil den på et punkt være så høy at ut signalet hele tiden er lavt. Dette ser man på bilde 3 og 4 i figur \ref{fig:tegneserie1}.
+Vi ser at når vi økte frekvensen vil den på et punkt være så høy at ut signalet hele tiden er lavt. Dette skyldes at på grunn av forsinkning i de logiske portene vil de ikke skifte raskt nok i forhold til frekvensen. Dette ser man på bilde 3 og 4 i figur \ref{fig:tegneserie1}.
 
 Målingen som ble gjort var å måle stige og falltid for den kritiske stien. Først frem til AND-porten og deretter frem til XOR porten i samme halvadder. Se resultater.
 
@@ -265,6 +273,16 @@ Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p
 
 Deretter målte vi stige- og falltid ved å bruke cursor-funksjonen. Målinger ble gjort for begge portene i enden av den kritiske stien. Både AND-porten som gir ut "carry" verdien og XOR-porten som gir ut summen for bit 4. Resultatene kan du se litt lenger nede i resultater.
 
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1\linewidth]{tegneserie1}
+	\caption{Skjermdump av målingene med varierende frekvens}
+	\label{fig:tegneserie1}
+\end{figure}
+
+
+\newpage
+\newpage
 \section{Utsyrsliste}
 Følgende utstyr ble brukt under labben;
 \begin{itemize}
@@ -278,6 +296,15 @@ Følgende utstyr ble brukt under labben;
 	\item BNC-BNC kabel
 	\item BNC T-ledd
 \end{itemize}
+
+\section{Vedlegg}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{IMG_2923}
+	\caption{Ferdig oppkoblet kretskort på brett}
+	\label{fig:IMG_2923}
+\end{figure}
+
 
 \section{Resultater}
 \begin{table}[h]
@@ -294,6 +321,7 @@ Følgende utstyr ble brukt under labben;
 	\end{tabular}
 \end{table}
 
+\newpage
 \section{Diskusjon}
 Aviket i forplantingsforsinkelsen er innenfor reele grenser og vi anser aviket som akseptabelt. 
 \section{Konklusjon}
