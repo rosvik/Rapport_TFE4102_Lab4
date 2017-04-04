@@ -135,13 +135,6 @@ Totalt består kretskortet av 32 tilkoblinger.
 For å kunne utføre labratoriearbeidet måtte vi gjøre en del forberedelser. Dette inkluderte å sette oss inn i teorien bak prosjektet, designe modeller av kretser og gjøre nødvendige utregninger. Teorien vi leste til forberedelse var hovedsaklig fra labriatorieheftet [x], og er beskrevet i kapittel 2.
 
 For å lage en Krets som tar absoluttverdien av 4 bit, trengte vi å forberede modeller av tre kretser.
-\begin{multicols}{2}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\linewidth]{krets1}
-	\caption{KRETS-1}
-	\label{fig:KRETS-1}
-\end{figure}
 
 \begin{table}[h]
 	\centering
@@ -156,13 +149,33 @@ For å lage en Krets som tar absoluttverdien av 4 bit, trengte vi å forberede m
 		1 & 1 & 1 & 0 \\ \hline
 	\end{tabular}
 \end{table}
-\end{multicols}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.2\linewidth]{krets1}
+	\caption{KRETS-1}
+	\label{fig:KRETS-1}
+\end{figure}
 
 KRETS-1 (Figur \ref{fig:KRETS-1}) tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable porten, EN, er aktivert, ellers gjøres det ingen endringer slik at utportene DO[1-4] er lik inputportene. Kresten består av fire XOR komponenter.
 
-KRETS-2 er en halvadderkrets med to innganger. Dette vil si at den Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell \ref{tab:sannhet1} er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{krets2}
+	\caption{KRETS-2}
+	\label{fig:KRETS-2}
+\end{figure}
 
-KRETS-12 er en kombinasjon av KRETS-1 og KRETS-2, og repressenterer en ferdig 4-bit absoluttverdikrets.
+KRETS-2 (Figur \ref{fig:KRETS-2}) er en halvadderkrets med to innganger. Dette vil si at den Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell \ref{tab:sannhet1} er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{krets12}
+	\caption{KRETS-12}
+	\label{fig:KRETS-12}
+\end{figure}
+
+KRETS-12 (Figur \ref{fig:KRETS-12}) er en kombinasjon av KRETS-1 og KRETS-2, og repressenterer en ferdig 4-bit absoluttverdikrets.
 
 \subsubsection{Utregninger} % TODO: forandre overskrift
 For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits kovertering til absoluttverdi. Vi noterer derfor ned alle verdier fra -8 til 7 og deres absoluttverdier. Vi skriver verdiene på hexadesimal og desimal form for å gjøre det enkelt å sjekke resultatene på lab.
@@ -193,7 +206,14 @@ For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits koverte
 	\end{tabular}
 \end{table}
 
+Vi vil også finne ut hvor lang tid det maksimalt kan ta fra vi sender input til kretsen våt og at vi får output. Dette er forplantningsforsinkelsen i kritisk sti i kretsen. Kritisk sti er markert i rødt i Figur \ref{fig:KRETS-12}. Vi kan her se at kritisk sti går gjennom to XOR porter og tre AND porter. Av databladene vedlegg G.3 og G.4 i Labriatoreheftet [2] har vi at en XOR-port har 140ns forsinkelse og en AND-port har 125ns. Altså har vi at forplantningsforsinkelsen \begin{math} T_{max} \end{math} er:
+
+\begin{equation}
+	T_{max} = 2 * 140ns + 3 * 125ns = 655ns
+\end{equation}
+
 % TODO: Forarbeid 5e (forplantningsforinkelse)
+
 
 % \newpage
 
@@ -229,7 +249,8 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 		\item 23 og 24
 	\end{multicols}
 \end{itemize}
-Se ferdig oppkoblet brett i vedlegg, figur \ref{fig:IMG_2923}
+
+Se ferdig oppkoblet brett i Vedlegg 1 (figur \ref{fig:IMG_2923}).
 \newline
 
 \begin{wrapfigure}{1}{0.2\textwidth}
@@ -324,6 +345,7 @@ Aviket i forplantingsforsinkelsen er innenfor reele grenser og vi anser aviket s
 
 
 \section{Vedlegg}
+\subsection{Vedlegg 1: Ferdig oppkoblet kretskort}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{IMG_2923}

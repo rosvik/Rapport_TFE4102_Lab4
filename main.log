@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  4 APR 2017 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  4 APR 2017 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -998,78 +998,66 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 <images/krets1.png, id=26, 244.0317pt x 258.2448pt>
 File: images/krets1.png Graphic file (type png)
  <use images/krets1.png>
-Package pdftex.def Info: images/krets1.png used on input line 141.
-(pdftex.def)             Requested size: 65.03743pt x 68.82465pt.
+Package pdftex.def Info: images/krets1.png used on input line 155.
+(pdftex.def)             Requested size: 88.71434pt x 93.88225pt.
 
+[2] <images/krets2.png, id=32, 375.0813pt x 113.7048pt>
+File: images/krets2.png Graphic file (type png)
 
-Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
-environment!.
+<use images/krets2.png>
+Package pdftex.def Info: images/krets2.png used on input line 164.
+(pdftex.def)             Requested size: 177.42868pt x 53.78651pt.
+ <images/krets12.png, id=33, 599.841pt x 643.4439pt>
+File: images/krets12.png Graphic file (type png)
 
-
-Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
-environment!.
-
-
-LaTeX Warning: Reference `tab:sannhet1' on page 2 undefined on input line 163.
-
-[2 <./images/krets1.png>]
-
-LaTeX Warning: Reference `tab:sannhet1' on page 3 undefined on input line 213.
-
-
-LaTeX Warning: Reference `tab:sannhet1' on page 3 undefined on input line 213.
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+<use images/krets12.png>
+Package pdftex.def Info: images/krets12.png used on input line 173.
+(pdftex.def)             Requested size: 221.78923pt x 237.91342pt.
+ [3 <./images/krets1.png> <./images/krets2.png> <./images/krets12.png>] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
-<images/SCR03.png, id=37, 424.58624pt x 530.98375pt>
+<images/SCR03.png, id=46, 424.58624pt x 530.98375pt>
 File: images/SCR03.png Graphic file (type png)
  <use images/SCR03.png>
-Package pdftex.def Info: images/SCR03.png used on input line 236.
+Package pdftex.def Info: images/SCR03.png used on input line 257.
 (pdftex.def)             Requested size: 106.1463pt x 132.7456pt.
 
-Overfull \hbox (17.43196pt too wide) in paragraph at lines 236--237
+Overfull \hbox (17.43196pt too wide) in paragraph at lines 257--258
 [][] 
  []
 
-<images/tegneserie1.png, id=38, 2584.65625pt x 1672.2475pt>
+[5 <./images/SCR03.png>]
+<images/tegneserie1.png, id=51, 2584.65625pt x 1672.2475pt>
 File: images/tegneserie1.png Graphic file (type png)
 
 <use images/tegneserie1.png>
-Package pdftex.def Info: images/tegneserie1.png used on input line 278.
+Package pdftex.def Info: images/tegneserie1.png used on input line 299.
 (pdftex.def)             Requested size: 443.57848pt x 286.98305pt.
- [4 <./images/SCR03.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./images/tegneserie1.png>] [6]
-<images/IMG_2923.jpg, id=52, 3035.34pt x 4047.12pt>
+ [6 <./images/tegneserie1.png>] [7]
+<images/IMG_2923.jpg, id=59, 3035.34pt x 4047.12pt>
 File: images/IMG_2923.jpg Graphic file (type jpg)
  <use images/IMG_2923.jpg>
-Package pdftex.def Info: images/IMG_2923.jpg used on input line 329.
+Package pdftex.def Info: images/IMG_2923.jpg used on input line 351.
 (pdftex.def)             Requested size: 443.57848pt x 591.41806pt.
 
-Overfull \vbox (24.81178pt too high) has occurred while \output is active []
+Overfull \vbox (44.80342pt too high) has occurred while \output is active []
 
 
-[7 <./images/IMG_2923.jpg>] [8] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
+[8 <./images/IMG_2923.jpg>] [9] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19453 strings out of 493014
- 439783 string characters out of 6133352
- 594760 words of memory out of 5000000
- 22676 multiletter control sequences out of 15000+600000
+ 19465 strings out of 493014
+ 440009 string characters out of 6133352
+ 591784 words of memory out of 5000000
+ 22686 multiletter control sequences out of 15000+600000
  6218 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,56p,466b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,56p,541b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -1078,10 +1066,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on main.pdf (12 pages, 2506359 bytes).
+Output written on main.pdf (13 pages, 2721944 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

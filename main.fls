@@ -218,6 +218,12 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 INPUT images/krets1.png
 INPUT ./images/krets1.png
 INPUT ./images/krets1.png
+INPUT images/krets2.png
+INPUT ./images/krets2.png
+INPUT ./images/krets2.png
+INPUT images/krets12.png
+INPUT ./images/krets12.png
+INPUT ./images/krets12.png
 INPUT images/SCR03.png
 INPUT ./images/SCR03.png
 INPUT ./images/SCR03.png

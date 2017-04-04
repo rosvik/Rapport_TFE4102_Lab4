@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex main.idx"] 1490958965 "main.idx" "main.ind" "main" 1491295025
-  "main.idx" 1491295024 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex main.idx"] 1490958965 "main.idx" "main.ind" "main" 1491299251
+  "main.idx" 1491299249 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "main.ilg"
   "main.ind"
-["pdflatex"] 1491295024 "main.tex" "main.pdf" "main" 1491295025
+["pdflatex"] 1491299248 "main.tex" "main.pdf" "main" 1491299251
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -146,14 +146,16 @@
   "images/IMG_2923.jpg" 1491217334 2097279 ad2afebb57da74f8c431f3df6cdc233c ""
   "images/SCR03.png" 1490954432 30566 0cf9139acc018e4c6e40f133023f5bdc ""
   "images/krets1.png" 1491217171 54001 adaecea978b375dbe8833a5488c52096 ""
+  "images/krets12.png" 1491298399 150360 fc17182e5ed45f75ffcc9b48406a515f ""
+  "images/krets2.png" 1491217173 43495 baa32a8c18b9d773d313e01e67545aa7 ""
   "images/tegneserie1.png" 1490957601 266465 9e4a2a6a11d2b5dd42673d4e18c2d85d ""
-  "main.aux" 1491295025 2921 9da916cd6bb38fd33475f4eb4e01efe2 ""
+  "main.aux" 1491299251 3391 70613fff5c950c0830a6621feca7ed50 ""
   "main.ind" 1491217268 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.tex" 1491295022 14729 445b1093daab0bba23b7a6b97553e5b5 ""
-  "main.toc" 1491295025 1426 ab39623eb1594d7506313fb113d94187 ""
+  "main.tex" 1491299248 15659 7fa9690ea33e27fde0647843d1d6195b ""
+  "main.toc" 1491299251 1512 b8f184abb234ae41decf86bd5c9b0f6a ""
   (generated)
-  "main.pdf"
-  "main.log"
   "main.aux"
+  "main.pdf"
   "main.idx"
+  "main.log"
   "main.toc"
