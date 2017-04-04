@@ -1,23 +1,23 @@
 \select@language {norsk}
 \contentsline {section}{\numberline {1}Innledning}{1}
-\contentsline {section}{\numberline {2}'Teoridelen'}{2}
-\contentsline {subsection}{\numberline {2.1}Absoluttverdi}{2}
-\contentsline {subsection}{\numberline {2.2}Invertering av bits}{2}
-\contentsline {subsection}{\numberline {2.3}Ripple Carry}{2}
+\contentsline {section}{\numberline {2}Teori}{1}
+\contentsline {subsection}{\numberline {2.1}Absoluttverdi}{1}
+\contentsline {subsection}{\numberline {2.2}Invertering av bits}{1}
+\contentsline {subsection}{\numberline {2.3}Ripple Carry}{1}
 \contentsline {subsection}{\numberline {2.4}Tidsforsinkelse}{2}
 \contentsline {subsection}{\numberline {2.5}Stige-/falltid}{2}
-\contentsline {subsection}{\numberline {2.6}Kretskort}{3}
-\contentsline {section}{\numberline {3}M\IeC {\r a}lemetode og arbeidsbeskrivelse}{3}
-\contentsline {subsection}{\numberline {3.1}Forarbeid}{3}
-\contentsline {subsubsection}{\numberline {3.1.1}Design av kretser}{3}
+\contentsline {subsection}{\numberline {2.6}Kretskort}{2}
+\contentsline {section}{\numberline {3}M\IeC {\r a}lemetode og arbeidsbeskrivelse}{2}
+\contentsline {subsection}{\numberline {3.1}Forarbeid}{2}
+\contentsline {subsubsection}{\numberline {3.1.1}Design av kretser}{2}
 \contentsline {subsubsection}{\numberline {3.1.2}Utregninger}{3}
-\contentsline {subsection}{\numberline {3.2}Labratoriearbeid}{4}
+\contentsline {subsection}{\numberline {3.2}Labratoriearbeid}{3}
 \contentsline {subsubsection}{\numberline {3.2.1}Oppsett av Oscilloskopet og justering av probe}{4}
-\contentsline {subsubsection}{\numberline {3.2.2}Forplantlingsforsinkelse}{5}
-\contentsline {subsubsection}{\numberline {3.2.3}Stige-/falltid}{6}
-\contentsline {section}{\numberline {4}Utsyrsliste}{6}
-\contentsline {section}{\numberline {5}Resultater}{6}
-\contentsline {section}{\numberline {6}Diskusjon}{6}
+\contentsline {subsubsection}{\numberline {3.2.2}Forplantlingsforsinkelse}{4}
+\contentsline {subsubsection}{\numberline {3.2.3}Stige-/falltid}{4}
+\contentsline {section}{\numberline {4}Utsyrsliste}{5}
+\contentsline {section}{\numberline {5}Resultater}{5}
+\contentsline {section}{\numberline {6}Diskusjon}{5}
 \contentsline {section}{\numberline {7}Konklusjon}{6}
-\contentsline {section}{\numberline {8}Vedlegg}{6}
-\contentsline {section}{\numberline {9}Litteraturreferanser}{6}
+\contentsline {section}{\numberline {8}Vedlegg}{7}
+\contentsline {section}{\numberline {9}Litteraturreferanser}{8}

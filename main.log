@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  31 MAR 2017 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  4 APR 2017 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,7 +854,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-\GPT@outputbox=\box66
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count133
+\float@exts=\toks36
+\float@box=\box66
+\@float@everytoks=\toks37
+\@floatcapt=\box67
+)
 \@indexfile=\write4
 \openout4 = `main.idx'.
 
@@ -867,32 +874,32 @@ LaTeX Warning: Label `my-label' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
+\scratchcounter=\count134
 \scratchdimen=\dimen191
-\scratchbox=\box67
-\nofMPsegments=\count134
-\nofMParguments=\count135
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count136
+\scratchbox=\box68
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count137
 \MPscratchDim=\dimen192
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
-\everyMPtoPDFconversion=\toks37
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -978,49 +985,91 @@ e
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] [1] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 117.
+ [2] [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
+
+<images/krets1.png, id=26, 244.0317pt x 258.2448pt>
+File: images/krets1.png Graphic file (type png)
+ <use images/krets1.png>
+Package pdftex.def Info: images/krets1.png used on input line 141.
+(pdftex.def)             Requested size: 65.03743pt x 68.82465pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
 
-[3] <images/SCR03.png, id=34, 424.58624pt x 530.98375pt>
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+LaTeX Warning: Reference `tab:sannhet1' on page 2 undefined on input line 163.
+
+[2 <./images/krets1.png>]
+
+LaTeX Warning: Reference `tab:sannhet1' on page 3 undefined on input line 213.
+
+
+LaTeX Warning: Reference `tab:sannhet1' on page 3 undefined on input line 213.
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
+
+ []
+
+<images/SCR03.png, id=37, 424.58624pt x 530.98375pt>
 File: images/SCR03.png Graphic file (type png)
-
-<use images/SCR03.png>
-Package pdftex.def Info: images/SCR03.png used on input line 224.
+ <use images/SCR03.png>
+Package pdftex.def Info: images/SCR03.png used on input line 236.
 (pdftex.def)             Requested size: 106.1463pt x 132.7456pt.
 
-Overfull \hbox (17.43196pt too wide) in paragraph at lines 224--225
+Overfull \hbox (17.43196pt too wide) in paragraph at lines 236--237
 [][] 
  []
 
-[4] <images/tegneserie1.png, id=39, 2584.65625pt x 1672.2475pt>
+<images/tegneserie1.png, id=38, 2584.65625pt x 1672.2475pt>
 File: images/tegneserie1.png Graphic file (type png)
 
 <use images/tegneserie1.png>
-Package pdftex.def Info: images/tegneserie1.png used on input line 249.
+Package pdftex.def Info: images/tegneserie1.png used on input line 278.
 (pdftex.def)             Requested size: 443.57848pt x 286.98305pt.
- [5 <./images/SCR03.png> <./images/tegneserie1.png>] [6] (./main.aux)
+ [4 <./images/SCR03.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./images/tegneserie1.png>] [6]
+<images/IMG_2923.jpg, id=52, 3035.34pt x 4047.12pt>
+File: images/IMG_2923.jpg Graphic file (type jpg)
+ <use images/IMG_2923.jpg>
+Package pdftex.def Info: images/IMG_2923.jpg used on input line 329.
+(pdftex.def)             Requested size: 443.57848pt x 591.41806pt.
+
+Overfull \vbox (24.81178pt too high) has occurred while \output is active []
+
+
+[7 <./images/IMG_2923.jpg>] [8] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19383 strings out of 493014
- 438789 string characters out of 6133352
- 588592 words of memory out of 5000000
- 22613 multiletter control sequences out of 15000+600000
+ 19453 strings out of 493014
+ 439783 string characters out of 6133352
+ 594760 words of memory out of 5000000
+ 22676 multiletter control sequences out of 15000+600000
  6218 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,56p,466b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,56p,466b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -1029,10 +1078,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on main.pdf (10 pages, 377317 bytes).
+Output written on main.pdf (12 pages, 2506359 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
