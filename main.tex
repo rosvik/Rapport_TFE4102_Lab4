@@ -107,6 +107,7 @@ For å invertere bitsene kan man bruke en krets bygget opp av XOR-porter. Hver p
 	\centering
 	\caption{XOR-sannhetstabell}
 	\label{truth-label}
+	
 	\vspace{0.2cm}
 	\begin{tabular}{| c | c | c |} \hline
 		A & B & Q \\ \hline
@@ -152,7 +153,8 @@ Totalt består kretskortet av 32 tilkoblinger.
 % TODO: Reference [x]
 For å kunne utføre labratoriearbeidet måtte vi gjøre en del forberedelser. Dette inkluderte å sette oss inn i teorien bak prosjektet, designe modeller av kretser og gjøre nødvendige utregninger. Teorien vi leste til forberedelse var hovedsaklig fra labriatorieheftet [1], og er beskrevet i kapittel 2.
 
-For å lage en Krets som tar absoluttverdien av 4 bit, trengte vi å forberede modeller av tre kretser.
+For å lage en krets som tar absoluttverdien av 4-bitbinært tall, delte vi kretsen opp i tre deler og tegnet kretstegning til hver av modulene.
+%trengte vi å forberede modeller av tre kretser.
 
 \begin{table}[h]
 	\centering
@@ -175,7 +177,7 @@ For å lage en Krets som tar absoluttverdien av 4 bit, trengte vi å forberede m
 	\label{fig:KRETS-1}
 \end{figure}
 
-KRETS-1 (Figur \ref{fig:KRETS-1}) tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable porten, EN, er aktivert, ellers gjøres det ingen endringer slik at utportene DO[1-4] er lik inputportene. Kresten består av fire XOR komponenter.
+KRETS-1 (Figur \ref{fig:KRETS-1}) tar inn 4 bit fra inputportene DI[1-4] og inverterer de hvis enable porten, EN, er aktivert, ellers gjøres det ingen endringer slik at utportene DO[1-4] er lik inputportene. Se tabell \ref{truth-label}. Kresten består av fire XOR komponenter.
 
 \begin{figure}[H]
 	\centering
@@ -184,7 +186,7 @@ KRETS-1 (Figur \ref{fig:KRETS-1}) tar inn 4 bit fra inputportene DI[1-4] og inve
 	\label{fig:KRETS-2}
 \end{figure}
 
-KRETS-2 (Figur \ref{fig:KRETS-2}) er en halvadderkrets med to innganger. Dette vil si at den Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell \ref{tab:sannhet1} er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
+KRETS-2 (Figur \ref{fig:KRETS-2}) er en halvadderkrets med to innganger. Dette vil si at den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell \ref{tab:sannhet1} er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
 
 \begin{figure}[H]
 	\centering
@@ -196,7 +198,7 @@ KRETS-2 (Figur \ref{fig:KRETS-2}) er en halvadderkrets med to innganger. Dette v
 KRETS-12 (Figur \ref{fig:KRETS-12}) er en kombinasjon av KRETS-1 og KRETS-2, og repressenterer en ferdig 4-bit absoluttverdikrets. Veien markert i rødt er kritisk sti, som vi vil få bruk for senere.
 
 \subsubsection{Utregninger} % TODO: forandre overskrift
-For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits kovertering til absoluttverdi. Vi noterer derfor ned alle verdier fra -8 til 7 og deres absoluttverdier. Vi skriver verdiene på hexadesimal og desimal form for å gjøre det enkelt å sjekke resultatene på lab.
+For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits konvertering til absoluttverdi. Vi noterer derfor ned alle verdier fra -8 til 7 og deres absoluttverdier. Vi skriver verdiene på hexadesimal og desimal form for å gjøre det enkelt å sjekke resultatene på lab.
 
 \begin{table}[h]
 	\centering
@@ -224,7 +226,7 @@ For å kunne sjekke resultatene på lab lager vi en oversikt over 4-bits koverte
 	\end{tabular}
 \end{table}
 
-Vi vil også finne ut hvor lang tid det maksimalt kan ta fra vi sender input til kretsen våt og at vi får output. Dette er forplantningsforsinkelsen i kritisk sti i kretsen. Kritisk sti er markert i rødt i Figur \ref{fig:KRETS-12}. Vi kan her se at kritisk sti går gjennom to XOR porter og tre AND porter. Av databladene vedlegg G.3 og G.4 i Labriatoreheftet [2] har vi at en XOR-port har 140ns forsinkelse og en AND-port har 125ns. Altså har vi at forplantningsforsinkelsen \begin{math} T_{max} \end{math} er:
+Vi vil også finne ut hvor lang tid det maksimalt kan ta fra vi sender input til kretsen vår, til vi får output ut av kretsen. Dette er forplantningsforsinkelsen for kritisk sti i kretsen. Kritisk sti er markert i rødt i figur \ref{fig:KRETS-12}. Vi kan her se at kritisk sti går gjennom to XOR porter og tre AND porter. Av databladene vedlegg G.3 og G.4 i Labriatoreheftet [2] har vi at en XOR-port har 140ns forsinkelse og en AND-port har 125ns. Altså har vi at forplantningsforsinkelsen \begin{math} T_{max} \end{math} er:
 
 \begin{equation}
 	T_{max} = 2 * 140ns + 3 * 125ns = 655ns
@@ -236,7 +238,7 @@ Vi vil også finne ut hvor lang tid det maksimalt kan ta fra vi sender input til
 % \newpage
 
 \subsection{Labratoriearbeid}
-Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. Vi kobler støm til port 31 og jording til 32. Så kobler sammen portene
+Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. Vi kobler støm til port 31 og jording til 32. Så kobler sammen portene:
 
 \begin{itemize}
 	\begin{multicols}{2}
@@ -248,9 +250,9 @@ Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. V
 \end{itemize}
 
 
-Ved å koble av og på stiftlistparene 0 og 3 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra Tabell \ref{tab:sannhet1}. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at LED-lampene SUM og CARRY lyser opp i henhold til S og C i Tabell \ref{tab:sannhet1}.
+Ved å koble av og på stiftlistparene 0 til 3 på kretskortet, kan vi teste om kretsen fungerer som forventet. Vi tester med verdiene fra tabell \ref{tab:sannhet1}. Vi kontrollerer at inputverdien stemmer overens med tabellen ved å se til at 7-segmentsdisplayet viser riktig input og at LED-lampene SUM og CARRY lyser opp i henhold til S og C i Tabell \ref{tab:sannhet1}.
 
-Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hele funksjonaliteten. Strøm og jording kobles som før, og de andre portene som skal kobles sammen er
+Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hele funksjonaliteten. Strøm og jording kobles som før, og de andre portene som skal kobles sammen er:
 
 \begin{itemize}
 	\begin{multicols}{2}
@@ -311,7 +313,7 @@ Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p
 
 Deretter målte vi stige- og falltid ved å bruke cursor-funksjonen. Målinger ble gjort for begge portene i enden av den kritiske stien. Både AND-porten som gir ut «carry» verdien og XOR-porten som gir ut summen for bit 4. Resultatene kan du se litt lenger nede i resultater.
 
-\begin{figure}[t]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{tegneserie1}
 	\caption{Skjermdump av målingene med varierende frekvens}
@@ -322,7 +324,7 @@ Deretter målte vi stige- og falltid ved å bruke cursor-funksjonen. Målinger b
 % \newpage
 % \newpage
 \section{Utsyrsliste}
-Følgende utstyr ble brukt under labben;
+Følgende utstyr ble brukt under labben:
 \begin{itemize}
 	\item Labkort (se avsnitt 2.6)
 	\item Ca. 20 ledninger
@@ -338,7 +340,7 @@ Følgende utstyr ble brukt under labben;
 
 
 \section{Resultater}
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\caption{Resultater}
 	\label{my-label}
@@ -358,12 +360,12 @@ Aviket i forplantingsforsinkelsen er innenfor reele grenser og vi anser aviket s
 
 
 
-Når vi ser på stige- og falltid, (rise time og fall time), ser man at det er et stort avik på samtlige. Dette skyldes i stor grad at den oppgitte teoretiske verdien ikke er helt nøyaktig for dette tilfelle. Verdiene er lest ut av tabellen i databladet til portkretsene. Det har her blitt oppgitt en lastkapasitans på 50pf. Resultatene vi oppnåde var ved en lavere lastkapasistans.
+Når vi ser på stige- og falltid, (rise time og fall time), ser man at det er et stort avik på samtlige. Dette skyldes i stor grad at den oppgitte teoretiske verdien ikke er helt nøyaktig for dette tilfelle. De teoretiske verdiene er lest ut av tabellen i databladet til portkretsene. Det har her blitt oppgitt en lastkapasitans på 50pf. Resultatene vi oppnåde var ved en lavere lastkapasistans og derav ventet at tiden skulle bli lavere.
 
 En annen usikkerhet knyttet til stige- og falltid er nøyaktigheten målingene som ble gjort. Det finnes også en utsikkerhet knyttet til kalibrering av proben.
 
 \section{Konklusjon}
-Vi har lært hvordan man kobler opp en absoluttverdi krets, virkemåten og hvordan man designer den. I forhold til målene listet i innledningen er disse blitt oppnådd. Innenfor disse målene har vi blant lært om stige- og falltid og hvordan dette påvirker den maksimale klokkefrekvensen.
+Vi har lært hvordan man kobler opp en absoluttverdikrets, virkemåten og hvordan man designer den. I forhold til målene listet i innledningen er disse blitt oppnådd. Innenfor disse målene har vi blant lært om stige- og falltid og hvordan dette påvirker den maksimale klokkefrekvensen.
 
 Oppkoblingen av kretsen og utføringen av de andre oppgavene i øvingen har gått fint, uten store problemer underveis.
 
