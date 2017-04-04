@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  4 APR 2017 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  4 APR 2017 12:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -993,32 +993,32 @@ e
 \openout7 = `main.lot'.
 
  [2] [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
 
 <images/krets1.png, id=26, 244.0317pt x 258.2448pt>
 File: images/krets1.png Graphic file (type png)
  <use images/krets1.png>
-Package pdftex.def Info: images/krets1.png used on input line 151.
+Package pdftex.def Info: images/krets1.png used on input line 152.
 (pdftex.def)             Requested size: 88.71434pt x 93.88225pt.
 
 [2] <images/krets2.png, id=32, 375.0813pt x 113.7048pt>
 File: images/krets2.png Graphic file (type png)
 
 <use images/krets2.png>
-Package pdftex.def Info: images/krets2.png used on input line 160.
+Package pdftex.def Info: images/krets2.png used on input line 161.
 (pdftex.def)             Requested size: 177.42868pt x 53.78651pt.
  <images/krets12.png, id=33, 599.841pt x 643.4439pt>
 File: images/krets12.png Graphic file (type png)
 
 <use images/krets12.png>
-Package pdftex.def Info: images/krets12.png used on input line 183.
+Package pdftex.def Info: images/krets12.png used on input line 184.
 (pdftex.def)             Requested size: 221.78923pt x 237.91342pt.
  [3 <./images/krets1.png> <./images/krets2.png>]
 
@@ -1028,10 +1028,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/SCR03.png, id=46, 424.58624pt x 530.98375pt>
 File: images/SCR03.png Graphic file (type png)
  <use images/SCR03.png>
-Package pdftex.def Info: images/SCR03.png used on input line 260.
+Package pdftex.def Info: images/SCR03.png used on input line 262.
 (pdftex.def)             Requested size: 106.1463pt x 132.7456pt.
 
-Overfull \hbox (17.43196pt too wide) in paragraph at lines 260--261
+Overfull \hbox (17.43196pt too wide) in paragraph at lines 262--263
 [][] 
  []
 
@@ -1039,27 +1039,24 @@ Overfull \hbox (17.43196pt too wide) in paragraph at lines 260--261
 File: images/tegneserie1.png Graphic file (type png)
 
 <use images/tegneserie1.png>
-Package pdftex.def Info: images/tegneserie1.png used on input line 286.
+Package pdftex.def Info: images/tegneserie1.png used on input line 288.
 (pdftex.def)             Requested size: 443.57848pt x 286.98305pt.
- [6 <./images/SCR03.png> <./images/tegneserie1.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8] <images/IMG_2923.jpg, id=62, 3035.34pt x 4047.12pt>
+ [6 <./images/SCR03.png> <./images/tegneserie1.png>] [7] [8] <images/IMG_2923.j
+pg, id=62, 3035.34pt x 4047.12pt>
 File: images/IMG_2923.jpg Graphic file (type jpg)
 
 <use images/IMG_2923.jpg>
-Package pdftex.def Info: images/IMG_2923.jpg used on input line 358.
+Package pdftex.def Info: images/IMG_2923.jpg used on input line 360.
 (pdftex.def)             Requested size: 310.50357pt x 413.99881pt.
  [9 <./images/IMG_2923.jpg>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 19479 strings out of 493014
- 440303 string characters out of 6133352
+ 19480 strings out of 493014
+ 440312 string characters out of 6133352
  588788 words of memory out of 5000000
- 22691 multiletter control sequences out of 15000+600000
+ 22692 multiletter control sequences out of 15000+600000
  6218 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,56p,522b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,56p,556b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fo
@@ -1069,7 +1066,7 @@ ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts
 ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy5.pfb>
-Output written on main.pdf (13 pages, 2723713 bytes).
+Output written on main.pdf (13 pages, 2723819 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream

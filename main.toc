@@ -17,8 +17,8 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Forplantlingsforsinkelse}{6}
 \contentsline {subsubsection}{\numberline {3.2.3}Stige-/falltid}{7}
 \contentsline {section}{\numberline {4}Utsyrsliste}{7}
-\contentsline {section}{\numberline {5}Resultater}{7}
-\contentsline {section}{\numberline {6}Diskusjon}{7}
+\contentsline {section}{\numberline {5}Resultater}{8}
+\contentsline {section}{\numberline {6}Diskusjon}{8}
 \contentsline {section}{\numberline {7}Konklusjon}{8}
 \contentsline {section}{\numberline {8}Vedlegg}{9}
 \contentsline {subsection}{\numberline {8.1}Vedlegg 1: Ferdig oppkoblet kretskort}{9}
