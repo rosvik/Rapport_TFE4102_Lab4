@@ -9,6 +9,8 @@
 \usepackage{wrapfig}
 \usepackage{amsmath}
 \usepackage{float}
+\usepackage[parfill]{parskip}
+
 
 \graphicspath{ {images/} }
 
@@ -25,6 +27,7 @@
 
 \begin{document}
 \pagenumbering{gobble}
+
 
 % FORSIDE
 \begin{titlepage}
@@ -59,7 +62,17 @@
 
 \newpage
 % SAMMENDRAG
-Raporten er basert på hva som ble gjort i lab 4 den 15. mars 2017. Den omhandlet oppkobling og design av en 4-bit absoluttverdi krets. Basert på XOR og AND porter i ferdig brett var oppgaven å koble dette opp slik at man kunne ta absoluttverdien av en 4-bit binært tall.
+\begin{abstract}
+    Rapporten beskriver design og oppkobling av en 4-bit absoluttverdi krets. Kretsen er basert på XOR og AND porter. Formålet med kretsen var å kunne ta inn 4-bit i parallel. Tallet utgjorde et 4-bit binært tall på toerkomplement form. Kretsen skulle finne ut om dette var negativt og om det var skulle den konvertere det negative tallet til et positivt tall på toerkomplement form.
+
+    Den første delen av raporten om hanlder teorien bak designet av absoluttverdikretsen. Den påfølgende delen omhandler hvordan vi utførte den praktiske delen som å koblet opp kretsen labben. Deretter diskuter vi resultatene og gir en konklusjon.
+    
+    
+    Raporten er basert på hva som ble gjort i lab 4 den 15. mars 2017 og forarbeidet før labben.
+\end{abstract}
+
+
+
 
 
 
@@ -307,18 +320,27 @@ Følgende utstyr ble brukt under labben;
 	\vspace{0.2cm}
 	\begin{tabular}{| l | l | l | l | l |} \hline
 	Måling & Beregnet & Målt & Avvik & Avvik (\%) \\ \hline
-	Forplantningsforsinkelse & 655ns             & 640ns         & 15ns          & 2.3\%              \\ \hline
-	Rise time                &                   & 47ns          &               &                    \\ \hline
-	Fall time                &                   & 63ns          &               &                    \\ \hline
-	Rise time, XOR port      &                   & 32ns          &               &                    \\ \hline
-	Fall time, XOR port      &                   & 82ns          &               & 				   \\ \hline
+	Forplantningsforsinkelse & 655ns                  & 640ns         & 15ns         & 2.3\%             \\ \hline
+	Rise time                & 100ns                  & 47ns          & 53ns         & 53\%              \\ \hline
+	Fall time                & 100ns                  & 63ns          & 37ns         & 37\%              \\ \hline
+	Rise time, XOR port      & 100ns                  & 32ns          & 68ns         & 68\%              \\ \hline
+	Fall time, XOR port      & 100ns                  & 82ns          & 18ns         & 18\%		     	 \\ \hline
 	\end{tabular}
 \end{table}
 
 \section{Diskusjon}
 Aviket i forplantingsforsinkelsen er innenfor reele grenser og vi anser aviket som akseptabelt.
 
+
+
+Når vi ser på stige- og falltid, (rise time og fall time), ser man at det er et stort avik på samtlige. Dette skyldes i stor grad at den oppgitte teoretiske verdien ikke er helt nøyaktig for dette tilfelle. Verdiene er lest ut av tabellen i databladet til portkretsene. Det har her blitt oppgitt en lastkapasitans på 50pf. Resultatene vi oppnåde var ved en lavere lastkapasistans. 
+
+En annen usikkerhet knyttet til stige- og falltid er nøyaktigheten målingene som ble gjort. Det finnes også en utsikkerhet knyttet til kalibrering av proben.
+
 \section{Konklusjon}
+Vi har lært hvordan man kobler opp en absoluttverdi krets, virkemåten og hvordan man designer den. I forhold til målene listet i innledningen er disse blitt oppnådd. Innenfor disse målene har vi blant lært om stige- og falltid og hvordan dette påvirker den maksimale klokkefrekvensen.
+
+Oppkoblingen av kretsen og utføringen av de andre oppgavene i øvingen har gått fint, uten store problemer underveis.  
 
 \newpage
 
