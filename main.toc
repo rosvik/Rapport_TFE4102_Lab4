@@ -21,4 +21,4 @@
 \contentsline {section}{\numberline {7}Konklusjon}{7}
 \contentsline {section}{\numberline {8}Vedlegg}{8}
 \contentsline {subsection}{\numberline {8.1}Vedlegg 1: Ferdig oppkoblet kretskort}{8}
-\contentsline {section}{\numberline {9}Litteraturreferanser}{9}
+\contentsline {section}{\numberline {9}Litteraturreferanser}{8}
