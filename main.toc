@@ -4,21 +4,22 @@
 \contentsline {subsection}{\numberline {2.1}Absoluttverdi}{1}
 \contentsline {subsection}{\numberline {2.2}Invertering av bits}{1}
 \contentsline {subsection}{\numberline {2.3}Ripple Carry}{1}
-\contentsline {subsection}{\numberline {2.4}Tidsforsinkelse}{2}
-\contentsline {subsection}{\numberline {2.5}Stige-/falltid}{2}
-\contentsline {subsection}{\numberline {2.6}Kretskort}{2}
+\contentsline {subsection}{\numberline {2.4}Absoluttverdikretsen}{2}
+\contentsline {subsection}{\numberline {2.5}Tidsforsinkelse}{2}
+\contentsline {subsection}{\numberline {2.6}Stige-/falltid}{2}
+\contentsline {subsection}{\numberline {2.7}Kretskort}{2}
 \contentsline {section}{\numberline {3}M\IeC {\r a}lemetode og arbeidsbeskrivelse}{2}
 \contentsline {subsection}{\numberline {3.1}Forarbeid}{2}
 \contentsline {subsubsection}{\numberline {3.1.1}Design av kretser}{2}
 \contentsline {subsubsection}{\numberline {3.1.2}Utregninger}{4}
 \contentsline {subsection}{\numberline {3.2}Labratoriearbeid}{4}
 \contentsline {subsubsection}{\numberline {3.2.1}Oppsett av Oscilloskopet og justering av probe}{5}
-\contentsline {subsubsection}{\numberline {3.2.2}Forplantlingsforsinkelse}{5}
-\contentsline {subsubsection}{\numberline {3.2.3}Stige-/falltid}{6}
-\contentsline {section}{\numberline {4}Utsyrsliste}{6}
+\contentsline {subsubsection}{\numberline {3.2.2}Forplantlingsforsinkelse}{6}
+\contentsline {subsubsection}{\numberline {3.2.3}Stige-/falltid}{7}
+\contentsline {section}{\numberline {4}Utsyrsliste}{7}
 \contentsline {section}{\numberline {5}Resultater}{7}
 \contentsline {section}{\numberline {6}Diskusjon}{7}
-\contentsline {section}{\numberline {7}Konklusjon}{7}
-\contentsline {section}{\numberline {8}Vedlegg}{8}
-\contentsline {subsection}{\numberline {8.1}Vedlegg 1: Ferdig oppkoblet kretskort}{8}
-\contentsline {section}{\numberline {9}Litteraturreferanser}{8}
+\contentsline {section}{\numberline {7}Konklusjon}{8}
+\contentsline {section}{\numberline {8}Vedlegg}{9}
+\contentsline {subsection}{\numberline {8.1}Vedlegg 1: Ferdig oppkoblet kretskort}{9}
+\contentsline {section}{\numberline {9}Litteraturreferanser}{9}

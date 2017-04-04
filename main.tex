@@ -66,16 +66,9 @@
 
 Rapporten beskriver design og oppkobling av en 4-bit absoluttverdi krets. Kretsen er basert på XOR og AND porter. Formålet med kretsen var å kunne ta inn 4-bit i parallel. Tallet utgjorde et 4-bit binært tall på toerkomplement form. Kretsen skulle finne ut om dette var negativt og om det var skulle den konvertere det negative tallet til et positivt tall på toerkomplement form.
 
-Den første delen av raporten handler om teorien bak designet av absoluttverdikretsen. Den påfølgende delen omhandler hvordan vi utførte den praktiske delen som å koblet opp kretsen labben. Deretter diskuter vi resultatene og gir en konklusjon.
+Den første delen av raporten omhandler teorien bak designet av absoluttverdikretsen. Den påfølgende delen omhandler hvordan vi utførte den praktiske delen som å koblet opp kretsen labben. Deretter diskuter vi resultatene og gir en konklusjon.
 
 Rapporten er basert på hva som ble gjort i lab 4 den 15. mars 2017 og forarbeidet før labben.
-
-
-
-
-
-
-
 
 % INNHOLDSFORTEGNELSE
 \newpage
@@ -98,10 +91,10 @@ I løpet av laboratorieøvingen er målet å lære hvordan absoluttverdikretser 
 \subsection{Absoluttverdi}
 Uavhengig av tallsystem, så handler absoluttverdi om å omforme et tall slik at det alltid er positivt. Når det kommer til binære tall, så har man forskjellige type representasjoner. De mest vanlige er magnitude med og uten fortegn samt toerkomplement. Det er først når man kommer til toerkomplement at det blir en utfordring å ta absoluttverdi.
 
-For å ta absoluttverdien av et negativt tall på toerkomplement form må man invertere alle bitsene i tallet og deretter legge til en’. Man må også ta hensyn til at positive tall, disse skal ikke gjøres noe med. Man kan finne ut om et tall på toerkomplement form er negativt ved å lese den mest signifikante bitsen. Om det er null impliserer dette at tallet er positivt.
+For å ta absoluttverdien av et negativt tall på toerkomplement form må man invertere alle bitene i tallet og deretter legge til en’. Man må også ta hensyn til at positive tall ikke skal gjøres noe med. Man kan finne ut om et tall på toerkomplement form er negativt ved å lese den mest signifikante bitsen. Om det er null impliserer dette at tallet er positivt.
 
 \subsection{Invertering av bits}
-For å invertere bitsene kan man bruke en krets bygget opp av XOR-porter. Hver port tar inn in bit samt den mest signifikante bit. Av sannhetstabellen (Tabell \ref{truth-label}) kan vi se at XOR-porten vil invertere A når B er høy, ellers vil utgangen være lik A.
+For å invertere bitsene kan man bruke en krets bygget opp av XOR-porter. Hver port tar inn hver sin bit samt den mest signifikante bit. Av sannhetstabellen (Tabell \ref{truth-label}) kan vi se at XOR-porten vil invertere A når B er høy, ellers vil utgangen være lik A.
 
 \begin{table}[h]
 	\centering
@@ -121,25 +114,25 @@ For å invertere bitsene kan man bruke en krets bygget opp av XOR-porter. Hver p
 \subsection{Ripple Carry}
 For å kunne legge til en’ i et binært tall kan man bruke en «Ripple Carry»-adderer. Adderen har som formål å kunne addere to binære tall. Denne baser seg på at man har en blokk for hver bit. Hver av blokkene legger sammen tre bit. En carry, samt et tall med lik indeks fra hver av input tallene. «Carry»-biten kommer fra sist blokk. Blokken vil deretter gi ut summen av de tre bitene og en eventuell «carry».
 
-Siden vi i denne sammenhengen bare er ute etter å legge til en’ (0001), kan vi simplifisere blokkene med å fjerne en inngang. Man legger til en’ ved å at «carry» i den første blokken blir en’. De nye blokkene kaller man halvadder.
-1.4 Absolutt kretsen
-Ved å koble inverteringskretsen sammen med den forenklete «Ripple Carry»-adderen oppnår man en absolutt krets.
+Siden vi i denne sammenhengen bare er ute etter å legge til en’ (0001), kan vi simplifisere blokkene med å fjerne en inngang. Man legger til en’ ved at «carry» i den første blokken blir en’. De nye blokkene kaller man halvadder.
+
+\subsection{Absoluttverdikretsen}
+Ved å koble inverteringskretsen sammen med den forenklete «Ripple Carry»-adderen oppnår man en absoluttverdikrets.
 
 \subsection{Tidsforsinkelse}
 Fra inngangssignalet endrer seg til utgangssignalet endrer seg tar det noe tid. For å finne ut hvor lang tid dette tar kan man bruke kritisk sti. Den definerer den lengste veien et signal må forplante seg gjennom kretsen.
 
 \subsection{Stige-/falltid}
-Tiden det tar for en utgang å stige fra 10\% til 90\% kaller man sitgetid. Falltid er tiden utgangen bruker på å gå fra 90\% til å falle ned til 10\%
+Tiden det tar for en utgang å stige fra 10\% til 90\% kaller man stigetid. Falltid er tiden utgangen bruker på å gå fra 90\% til 10\%.
 
 \subsection{Kretskort}
-I labben fikk vi utdelt et kretskort som var ferdigloddet. Følgende informasjon ble oppgitt i laboratoriehefte;
+I labben fikk vi utdelt et kretskort som var ferdigloddet. Følgende informasjon ble oppgitt i laboratorieheftet [1];
 \begin{itemize}
 	\item To syvsegment display med driverkretser;
 	\item To lysdioder med drivertransistorer
 	\item Logikk i form av diskrete IC-er
 	\item En spenningsregulator
 	\item Koblingspinner som kan kobles sammen ved å bryke stiftlister med kortslutningsbøyler
-	vis
 \end{itemize}
 Totalt består kretskortet av 32 tilkoblinger.
 
@@ -150,25 +143,9 @@ Totalt består kretskortet av 32 tilkoblinger.
 
 \subsection{Forarbeid}
 \subsubsection{Design av kretser}
-% TODO: Reference [x]
-For å kunne utføre labratoriearbeidet måtte vi gjøre en del forberedelser. Dette inkluderte å sette oss inn i teorien bak prosjektet, designe modeller av kretser og gjøre nødvendige utregninger. Teorien vi leste til forberedelse var hovedsaklig fra labriatorieheftet [1], og er beskrevet i kapittel 2.
+For å kunne utføre labratoriearbeidet måtte vi gjøre en del forberedelser. Dette inkluderte å sette oss inn i teorien bak prosjektet, lage modeller av forskjellige kretser og gjøre nødvendige utregninger. Teorien vi leste til forberedelse var hovedsaklig fra labriatorieheftet [1], og er beskrevet i kapittel 2.
 
 For å lage en krets som tar absoluttverdien av 4-bitbinært tall, delte vi kretsen opp i tre deler og tegnet kretstegning til hver av modulene.
-%trengte vi å forberede modeller av tre kretser.
-
-\begin{table}[h]
-	\centering
-	\caption{Sannhetstabell for KRETS-1}
-	\label{tab:sannhet1}
-	\vspace{0.2cm}
-	\begin{tabular} {| c | c | c | c |} \hline
-		A & B & S & C \\ \hline
-		0 & 0 & 0 & 0 \\ \hline
-		0 & 1 & 1 & 0 \\ \hline
-		1 & 0 & 0 & 1 \\ \hline
-		1 & 1 & 1 & 0 \\ \hline
-	\end{tabular}
-\end{table}
 
 \begin{figure}[H]
 	\centering
@@ -186,7 +163,21 @@ KRETS-1 (Figur \ref{fig:KRETS-1}) tar inn 4 bit fra inputportene DI[1-4] og inve
 	\label{fig:KRETS-2}
 \end{figure}
 
-KRETS-2 (Figur \ref{fig:KRETS-2}) er en halvadderkrets med to innganger. Dette vil si at den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell \ref{tab:sannhet1} er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
+\begin{table}[h]
+	\centering
+	\caption{Sannhetstabell for KRETS-2}
+	\label{tab:sannhet1}
+	\vspace{0.2cm}
+	\begin{tabular} {| c | c | c | c |} \hline
+		A & B & S & C \\ \hline
+		0 & 0 & 0 & 0 \\ \hline
+		0 & 1 & 1 & 0 \\ \hline
+		1 & 0 & 0 & 1 \\ \hline
+		1 & 1 & 1 & 0 \\ \hline
+	\end{tabular}
+\end{table}
+
+KRETS-2 (Figur \ref{fig:KRETS-2}) er en halvadderkrets med to innganger. Dette vil si at den Den tar inn to bit og returnerer to verdier, SUM og CARRY. Tabell \ref{tab:sannhet1} er en sannhetstabell som beskriver funksjonaliteten til en halvadder.
 
 \begin{figure}[H]
 	\centering
@@ -232,11 +223,6 @@ Vi vil også finne ut hvor lang tid det maksimalt kan ta fra vi sender input til
 	T_{max} = 2 * 140ns + 3 * 125ns = 655ns
 \end{equation}
 
-% TODO: Forarbeid 5e (forplantningsforinkelse)
-
-
-% \newpage
-
 \subsection{Labratoriearbeid}
 Vi starter labarbeidet med å koble kortet slik at det fungerer som i KRETS-2. Vi kobler støm til port 31 og jording til 32. Så kobler sammen portene:
 
@@ -270,14 +256,13 @@ Når dette er gjort, kan vi koble sammen 4-bit absoluttverdikretsen og teste hel
 	\end{multicols}
 \end{itemize}
 
-Se ferdig oppkoblet brett i Vedlegg 1 (Figur \ref{fig:IMG_2923}).
+Bilde av ferdig oppkoblet brett er lagt ved som Vedlegg 1 (Figur \ref{fig:IMG_2923}).
 
 \begin{wrapfigure}{1}{0.2\textwidth}
 	\includegraphics[scale=0.25]{SCR03}
 	\caption{Innstillinger for probe på oscilloskop.}
 	\label{fig:inst1}
 \end{wrapfigure}
-
 
 Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabell \ref{tab:abs1}. Nå følger vi med på de to 7-segmentsdisplayene INN og UT for å se input og output. Etter at vi har testet alle verdiene og er overbevist om at kretsen fungerer, kan vi gå videre.
 
@@ -286,7 +271,7 @@ Vi kobler om de fire stiftlistparene for å sjekke om de korresponderer med Tabe
 Vi vil nå bruke en probe og oscilloskopet til å ta målinger av kretsen. Før vi setter i gang med det, vil vi forsikre oss om at der ikke er brudd i proben vi bruker. Vi følger prosedyren beskrevet i Labratorieheftets vedlegg C.4.1. Vi setter også oscilloscopet til standardinnstillinger ved å trykke på «Preset». Vi setter proben og innstillingen i kanalmenyen på oscilloskopet i modusen 10x som vist i Figur \ref{fig:inst1}.
 
 \subsubsection{Forplantlingsforsinkelse}
-For å kunne se hvordan kretsen fungerer når inn- og utverdiene forander seg vil vi koble på signalgeneratoren. Vi gjorde dette ved å koble signalgeneratonen til både oscilloskopets kanal 3 og kretsen ved hjelp av et BNC T-ledd. Vi kobler proben til enden av kritisk sti slik at vi kan måle forplantninsforsinkelsen. Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.
+For å kunne se hvordan kretsen fungerer når inn- og utverdiene forander seg vil vi koble på signalgeneratoren. Vi gjør dette ved å koble signalgeneratonen til både oscilloskopets kanal 3 og kretsen ved hjelp av et BNC T-ledd. Vi kobler proben til enden av kritisk sti slik at vi kan måle forplantninsforsinkelsen. Signalgeneratoren settes til 100kHz firkantpuls. Spenningen settes til 5Vp-p med en offset på 2.5V.
 
 Vi leser av forplantningsforsinkelsen til å være 640 ns. Sammenlignet med utregningene i forarbeider som var på 655ns er det et akseptabelt avvik på 4\% som hovedsaklig stammer fra usikkerhet i målingene våre, men også usikkerheter i komponenter og ledninger.
 
@@ -298,21 +283,6 @@ Med denne informasjonen kan vi regne ut den maksimale klokkefrekvensen for den m
 
 Vi vil så se hva som skjer om vi øker klokkefrekvensen over den maksimale klokkefrekvensen.
 
-
-På figur \ref{fig:tegneserie1} ser man skjermdump fra oscilloskopet. Den gule linjen (CH1) beskriver stige- og falltiden til kretsen sin kritiske sti. Den oransje linjen (CH3) kommer rett fra signalgeneratoren gjennom en BNC-BNC kabel.
-
-Vi ser at når vi økte frekvensen vil den på et punkt være så høy at ut signalet hele tiden er lavt. Dette skyldes at på grunn av forsinkning i de logiske portene vil de ikke skifte raskt nok i forhold til frekvensen. Dette ser man på bilde 3 og 4 i figur \ref{fig:tegneserie1}.
-
-Målingen som ble gjort var å måle stige og falltid for den kritiske stien. Først frem til AND-porten og deretter frem til XOR porten i samme halvadder. Se resultater.
-
-
-\subsubsection{Stige-/falltid}
-I den siste delen av laboratorieøvingen skulle vi lese av stig og falltid for den kritiske stien. Dette gjorde vi ved å bruke en signalgenerator, oscilloskop, probe og BNC-BNC kabel.
-
-Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.  Oscilloskopet ble stilt inn til å kun vise en flanke.
-
-Deretter målte vi stige- og falltid ved å bruke cursor-funksjonen. Målinger ble gjort for begge portene i enden av den kritiske stien. Både AND-porten som gir ut «carry» verdien og XOR-porten som gir ut summen for bit 4. Resultatene kan du se litt lenger nede i resultater.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{tegneserie1}
@@ -320,13 +290,24 @@ Deretter målte vi stige- og falltid ved å bruke cursor-funksjonen. Målinger b
 	\label{fig:tegneserie1}
 \end{figure}
 
+På figur \ref{fig:tegneserie1} ser man skjermdump fra oscilloskopet. Den gule linjen (CH1) beskriver stige- og falltiden til kretsen sin kritiske sti. Den oransje linjen (CH3) kommer rett fra signalgeneratoren gjennom en BNC-BNC kabel. Frekvensen fra signalgreneratoren økes mellom hvert bilde slik at vi kan se hvordan det påvirker utsignalet til kretsen.
 
-% \newpage
-% \newpage
+Vi ser at når vi øker frekvensen vil den på et punkt være så høy at utsignalet hele tiden er lavt. Dette skyldes at på grunn av forsinkning i de logiske portene vil de ikke skifte raskt nok i forhold til frekvensen. Dette ser man på bilde 3 og 4 i figur \ref{fig:tegneserie1}.
+
+Målingen som ble gjort var å måle stige og falltid for den kritiske stien. Først frem til AND-porten og deretter frem til XOR porten i samme halvadder. Se resultater i kapittel 5.
+
+
+\subsubsection{Stige-/falltid}
+I den siste delen av laboratorieøvingen skulle vi lese av stige- og falltid for den kritiske stien. Dette gjorde vi ved å bruke en signalgenerator, oscilloskop, probe og BNC-BNC kabel.
+
+Signalgeneratoren ble satt til 100kHz firkantpuls. Spenningen ble satt til 5Vp-p med en offset på 2.5V.  Oscilloskopet ble stilt inn til å kun vise en flanke.
+
+Deretter målte vi stige- og falltid ved å bruke cursor-funksjonen. Målinger ble gjort for begge portene i enden av den kritiske stien. Både AND-porten som gir ut «carry» verdien og XOR-porten som gir ut summen for bit 4. Resultatene kan du se i kapittel 5.
+
 \section{Utsyrsliste}
 Følgende utstyr ble brukt under labben:
 \begin{itemize}
-	\item Labkort (se avsnitt 2.6)
+	\item Labkort (se kapittel 2.6)
 	\item Ca. 20 ledninger
 	\item Koblingsbrett
 	\item Probe
