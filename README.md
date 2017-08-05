@@ -1,6 +1,6 @@
 ![NTNU logo](https://qore.no/res/ntnu-logo-100.png)
 
-# Rapport i Krets og Digitalteknikk, høst 2016
+# Rapport i Krets og Digitalteknikk, vår 2017
 
 Basert på Lab nr. 4: 4-bits absoluttverdikrets
 
